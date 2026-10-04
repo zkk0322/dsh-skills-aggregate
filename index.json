@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T08:46:07.825Z",
+  "generatedAt": "2026-10-04T08:54:41.130Z",
   "budgetBytes": 27262976,
   "usedBytes": 18476535,
   "skills": [
@@ -12,6 +12,18 @@
       "sourceRef": "main",
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/academy-guide",
       "license": "see upstream (Anthropic Agent Skills)",
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "size": 11345,
+          "sha256": null
+        },
+        {
+          "path": "SKILL.md",
+          "size": 7755,
+          "sha256": "f27992510c051355dfe68c92394d509af730da5298094ec86834ee40bbd31376"
+        }
+      ],
       "bytes": 19100
     },
     {
@@ -23,6 +35,378 @@
       "sourceRef": "main",
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/claude-api",
       "license": "see upstream (Anthropic Agent Skills)",
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "size": 11345,
+          "sha256": null
+        },
+        {
+          "path": "SKILL.md",
+          "size": 101724,
+          "sha256": "9aac10d9ffb8778c5b7c0b9ec612b3915e83065feb92763c8231469e9fbc29c9"
+        },
+        {
+          "path": "csharp/claude-api/README.md",
+          "size": 18915,
+          "sha256": null
+        },
+        {
+          "path": "csharp/claude-api/batches.md",
+          "size": 413,
+          "sha256": null
+        },
+        {
+          "path": "csharp/claude-api/files-api.md",
+          "size": 900,
+          "sha256": null
+        },
+        {
+          "path": "csharp/claude-api/streaming.md",
+          "size": 787,
+          "sha256": null
+        },
+        {
+          "path": "csharp/claude-api/tool-use.md",
+          "size": 5998,
+          "sha256": null
+        },
+        {
+          "path": "curl/examples.md",
+          "size": 9714,
+          "sha256": null
+        },
+        {
+          "path": "curl/managed-agents.md",
+          "size": 8618,
+          "sha256": null
+        },
+        {
+          "path": "go/claude-api/README.md",
+          "size": 8477,
+          "sha256": null
+        },
+        {
+          "path": "go/claude-api/files-api.md",
+          "size": 936,
+          "sha256": null
+        },
+        {
+          "path": "go/claude-api/streaming.md",
+          "size": 1026,
+          "sha256": null
+        },
+        {
+          "path": "go/claude-api/tool-use.md",
+          "size": 8393,
+          "sha256": null
+        },
+        {
+          "path": "go/managed-agents/README.md",
+          "size": 18939,
+          "sha256": null
+        },
+        {
+          "path": "java/claude-api/README.md",
+          "size": 11946,
+          "sha256": null
+        },
+        {
+          "path": "java/claude-api/files-api.md",
+          "size": 1198,
+          "sha256": null
+        },
+        {
+          "path": "java/claude-api/streaming.md",
+          "size": 655,
+          "sha256": null
+        },
+        {
+          "path": "java/claude-api/tool-use.md",
+          "size": 9509,
+          "sha256": null
+        },
+        {
+          "path": "java/managed-agents/README.md",
+          "size": 16944,
+          "sha256": null
+        },
+        {
+          "path": "php/claude-api/README.md",
+          "size": 6554,
+          "sha256": null
+        },
+        {
+          "path": "php/claude-api/batches.md",
+          "size": 447,
+          "sha256": null
+        },
+        {
+          "path": "php/claude-api/files-api.md",
+          "size": 476,
+          "sha256": null
+        },
+        {
+          "path": "php/claude-api/streaming.md",
+          "size": 682,
+          "sha256": null
+        },
+        {
+          "path": "php/claude-api/tool-use.md",
+          "size": 8097,
+          "sha256": null
+        },
+        {
+          "path": "php/managed-agents/README.md",
+          "size": 13513,
+          "sha256": null
+        },
+        {
+          "path": "python/claude-api/README.md",
+          "size": 20491,
+          "sha256": null
+        },
+        {
+          "path": "python/claude-api/batches.md",
+          "size": 5588,
+          "sha256": null
+        },
+        {
+          "path": "python/claude-api/files-api.md",
+          "size": 4499,
+          "sha256": null
+        },
+        {
+          "path": "python/claude-api/sdk-upgrade.md",
+          "size": 28741,
+          "sha256": null
+        },
+        {
+          "path": "python/claude-api/streaming.md",
+          "size": 11940,
+          "sha256": null
+        },
+        {
+          "path": "python/claude-api/tool-use.md",
+          "size": 19786,
+          "sha256": null
+        },
+        {
+          "path": "python/managed-agents/README.md",
+          "size": 11518,
+          "sha256": null
+        },
+        {
+          "path": "ruby/claude-api/README.md",
+          "size": 4843,
+          "sha256": null
+        },
+        {
+          "path": "ruby/claude-api/streaming.md",
+          "size": 235,
+          "sha256": null
+        },
+        {
+          "path": "ruby/claude-api/tool-use.md",
+          "size": 1063,
+          "sha256": null
+        },
+        {
+          "path": "ruby/managed-agents/README.md",
+          "size": 10452,
+          "sha256": null
+        },
+        {
+          "path": "shared/admin-api.md",
+          "size": 11606,
+          "sha256": null
+        },
+        {
+          "path": "shared/agent-design.md",
+          "size": 8736,
+          "sha256": null
+        },
+        {
+          "path": "shared/anthropic-cli.md",
+          "size": 22235,
+          "sha256": null
+        },
+        {
+          "path": "shared/claude-platform-on-aws.md",
+          "size": 4420,
+          "sha256": null
+        },
+        {
+          "path": "shared/cost-optimization.md",
+          "size": 57453,
+          "sha256": null
+        },
+        {
+          "path": "shared/error-codes.md",
+          "size": 19845,
+          "sha256": null
+        },
+        {
+          "path": "shared/live-sources.md",
+          "size": 22989,
+          "sha256": null
+        },
+        {
+          "path": "shared/managed-agents-api-reference.md",
+          "size": 34401,
+          "sha256": null
+        },
+        {
+          "path": "shared/managed-agents-client-patterns.md",
+          "size": 12043,
+          "sha256": null
+        },
+        {
+          "path": "shared/managed-agents-core.md",
+          "size": 32852,
+          "sha256": null
+        },
+        {
+          "path": "shared/managed-agents-environments.md",
+          "size": 12823,
+          "sha256": null
+        },
+        {
+          "path": "shared/managed-agents-events.md",
+          "size": 25029,
+          "sha256": null
+        },
+        {
+          "path": "shared/managed-agents-memory.md",
+          "size": 11362,
+          "sha256": null
+        },
+        {
+          "path": "shared/managed-agents-multiagent.md",
+          "size": 26250,
+          "sha256": null
+        },
+        {
+          "path": "shared/managed-agents-onboarding.md",
+          "size": 13154,
+          "sha256": null
+        },
+        {
+          "path": "shared/managed-agents-outcomes.md",
+          "size": 7918,
+          "sha256": null
+        },
+        {
+          "path": "shared/managed-agents-overview.md",
+          "size": 13341,
+          "sha256": null
+        },
+        {
+          "path": "shared/managed-agents-scheduled-deployments.md",
+          "size": 9068,
+          "sha256": null
+        },
+        {
+          "path": "shared/managed-agents-self-hosted-sandboxes.md",
+          "size": 27847,
+          "sha256": null
+        },
+        {
+          "path": "shared/managed-agents-tools.md",
+          "size": 35673,
+          "sha256": null
+        },
+        {
+          "path": "shared/managed-agents-webhooks.md",
+          "size": 11321,
+          "sha256": null
+        },
+        {
+          "path": "shared/model-migration.md",
+          "size": 316954,
+          "sha256": null
+        },
+        {
+          "path": "shared/models.md",
+          "size": 15969,
+          "sha256": null
+        },
+        {
+          "path": "shared/platform-availability.md",
+          "size": 7415,
+          "sha256": null
+        },
+        {
+          "path": "shared/preserved-thinking-migration.md",
+          "size": 63994,
+          "sha256": null
+        },
+        {
+          "path": "shared/preserved-thinking-migration/causes.md",
+          "size": 37879,
+          "sha256": null
+        },
+        {
+          "path": "shared/preserved-thinking-migration/drop_block_probe.py",
+          "size": 64338,
+          "sha256": null
+        },
+        {
+          "path": "shared/preserved-thinking-migration/prefix_diff.py",
+          "size": 94008,
+          "sha256": null
+        },
+        {
+          "path": "shared/prompt-audit.md",
+          "size": 48983,
+          "sha256": null
+        },
+        {
+          "path": "shared/prompt-caching.md",
+          "size": 33021,
+          "sha256": null
+        },
+        {
+          "path": "shared/token-counting.md",
+          "size": 1603,
+          "sha256": null
+        },
+        {
+          "path": "shared/tool-use-concepts.md",
+          "size": 44242,
+          "sha256": null
+        },
+        {
+          "path": "typescript/claude-api/README.md",
+          "size": 15739,
+          "sha256": null
+        },
+        {
+          "path": "typescript/claude-api/batches.md",
+          "size": 2594,
+          "sha256": null
+        },
+        {
+          "path": "typescript/claude-api/files-api.md",
+          "size": 2384,
+          "sha256": null
+        },
+        {
+          "path": "typescript/claude-api/streaming.md",
+          "size": 9514,
+          "sha256": null
+        },
+        {
+          "path": "typescript/claude-api/tool-use.md",
+          "size": 22670,
+          "sha256": null
+        },
+        {
+          "path": "typescript/managed-agents/README.md",
+          "size": 10989,
+          "sha256": null
+        }
+      ],
       "bytes": 1598024
     },
     {
@@ -34,6 +418,18 @@
       "sourceRef": "main",
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/discernment-nudge",
       "license": "see upstream (Anthropic Agent Skills)",
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "size": 11345,
+          "sha256": null
+        },
+        {
+          "path": "SKILL.md",
+          "size": 10592,
+          "sha256": "9191177c4a8ef11a20dace786d708506b22d43e748c71287bb823de0dc812dad"
+        }
+      ],
       "bytes": 21937
     },
     {
@@ -45,6 +441,28 @@
       "sourceRef": "main",
       "sourceUrl": "https://github.com/LeastBit/Anthropics_skills_zh-CN/tree/main/skills/algorithmic-art",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "size": 11357,
+          "sha256": null
+        },
+        {
+          "path": "SKILL.md",
+          "size": 17086,
+          "sha256": "606867a05702a739d59aa1b10e92185c4e7a8b9b415682b992c7302147331493"
+        },
+        {
+          "path": "templates/generator_template.js",
+          "size": 7632,
+          "sha256": null
+        },
+        {
+          "path": "templates/viewer.html",
+          "size": 20598,
+          "sha256": null
+        }
+      ],
       "bytes": 56673
     },
     {
@@ -56,6 +474,18 @@
       "sourceRef": "main",
       "sourceUrl": "https://github.com/LeastBit/Anthropics_skills_zh-CN/tree/main/skills/brand-guidelines",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "size": 11357,
+          "sha256": null
+        },
+        {
+          "path": "SKILL.md",
+          "size": 2046,
+          "sha256": "574b50287d496a18bd7bec4147e9ef28c3371cba0879772a1a5a90b921ef31e1"
+        }
+      ],
       "bytes": 13403
     },
     {
@@ -67,6 +497,423 @@
       "sourceRef": "main",
       "sourceUrl": "https://github.com/LeastBit/Anthropics_skills_zh-CN/tree/main/skills/canvas-design",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "size": 11357,
+          "sha256": null
+        },
+        {
+          "path": "SKILL.md",
+          "size": 10342,
+          "sha256": "0611682273f5472ad69f9140c81a4a2a14a7572ed8afb7d608f9cada3f5abd33"
+        },
+        {
+          "path": "canvas-fonts/ArsenalSC-OFL.txt",
+          "size": 4373,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/ArsenalSC-Regular.ttf",
+          "size": 165848,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/BigShoulders-Bold.ttf",
+          "size": 94528,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/BigShoulders-OFL.txt",
+          "size": 4397,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/BigShoulders-Regular.ttf",
+          "size": 94396,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/Boldonse-OFL.txt",
+          "size": 4390,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/Boldonse-Regular.ttf",
+          "size": 77168,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/BricolageGrotesque-Bold.ttf",
+          "size": 90952,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/BricolageGrotesque-OFL.txt",
+          "size": 4403,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/BricolageGrotesque-Regular.ttf",
+          "size": 90920,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/CrimsonPro-Bold.ttf",
+          "size": 107352,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/CrimsonPro-Italic.ttf",
+          "size": 108828,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/CrimsonPro-OFL.txt",
+          "size": 4394,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/CrimsonPro-Regular.ttf",
+          "size": 106696,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/DMMono-OFL.txt",
+          "size": 4392,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/DMMono-Regular.ttf",
+          "size": 48852,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/EricaOne-OFL.txt",
+          "size": 4410,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/EricaOne-Regular.ttf",
+          "size": 24872,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/GeistMono-Bold.ttf",
+          "size": 78304,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/GeistMono-OFL.txt",
+          "size": 4388,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/GeistMono-Regular.ttf",
+          "size": 78232,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/Gloock-OFL.txt",
+          "size": 4381,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/Gloock-Regular.ttf",
+          "size": 95156,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/IBMPlexMono-Bold.ttf",
+          "size": 136008,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/IBMPlexMono-OFL.txt",
+          "size": 4363,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/IBMPlexMono-Regular.ttf",
+          "size": 133796,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/IBMPlexSerif-Bold.ttf",
+          "size": 161000,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/IBMPlexSerif-BoldItalic.ttf",
+          "size": 169840,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/IBMPlexSerif-Italic.ttf",
+          "size": 170004,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/IBMPlexSerif-Regular.ttf",
+          "size": 160380,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/InstrumentSans-Bold.ttf",
+          "size": 68084,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/InstrumentSans-BoldItalic.ttf",
+          "size": 70004,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/InstrumentSans-Italic.ttf",
+          "size": 69900,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/InstrumentSans-OFL.txt",
+          "size": 4403,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/InstrumentSans-Regular.ttf",
+          "size": 68028,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/InstrumentSerif-Italic.ttf",
+          "size": 70868,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/InstrumentSerif-Regular.ttf",
+          "size": 69312,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/Italiana-OFL.txt",
+          "size": 4394,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/Italiana-Regular.ttf",
+          "size": 27184,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/JetBrainsMono-Bold.ttf",
+          "size": 114828,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/JetBrainsMono-OFL.txt",
+          "size": 4399,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/JetBrainsMono-Regular.ttf",
+          "size": 114904,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/Jura-Light.ttf",
+          "size": 154308,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/Jura-Medium.ttf",
+          "size": 154488,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/Jura-OFL.txt",
+          "size": 4380,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/LibreBaskerville-OFL.txt",
+          "size": 4449,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/LibreBaskerville-Regular.ttf",
+          "size": 147584,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/Lora-Bold.ttf",
+          "size": 133828,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/Lora-BoldItalic.ttf",
+          "size": 140332,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/Lora-Italic.ttf",
+          "size": 139328,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/Lora-OFL.txt",
+          "size": 4423,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/Lora-Regular.ttf",
+          "size": 133888,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/NationalPark-Bold.ttf",
+          "size": 79208,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/NationalPark-OFL.txt",
+          "size": 4399,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/NationalPark-Regular.ttf",
+          "size": 76424,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/NothingYouCouldDo-OFL.txt",
+          "size": 4363,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/NothingYouCouldDo-Regular.ttf",
+          "size": 32020,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/Outfit-Bold.ttf",
+          "size": 55392,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/Outfit-OFL.txt",
+          "size": 4389,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/Outfit-Regular.ttf",
+          "size": 54912,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/PixelifySans-Medium.ttf",
+          "size": 51072,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/PixelifySans-OFL.txt",
+          "size": 4395,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/PoiretOne-OFL.txt",
+          "size": 4366,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/PoiretOne-Regular.ttf",
+          "size": 45244,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/RedHatMono-Bold.ttf",
+          "size": 34420,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/RedHatMono-OFL.txt",
+          "size": 4394,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/RedHatMono-Regular.ttf",
+          "size": 34488,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/Silkscreen-OFL.txt",
+          "size": 4394,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/Silkscreen-Regular.ttf",
+          "size": 31960,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/SmoochSans-Medium.ttf",
+          "size": 59704,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/SmoochSans-OFL.txt",
+          "size": 4396,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/Tektur-Medium.ttf",
+          "size": 76248,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/Tektur-OFL.txt",
+          "size": 4385,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/Tektur-Regular.ttf",
+          "size": 75604,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/WorkSans-Bold.ttf",
+          "size": 191304,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/WorkSans-BoldItalic.ttf",
+          "size": 175772,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/WorkSans-Italic.ttf",
+          "size": 174280,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/WorkSans-OFL.txt",
+          "size": 4397,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/WorkSans-Regular.ttf",
+          "size": 188916,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/YoungSerif-OFL.txt",
+          "size": 4398,
+          "sha256": null
+        },
+        {
+          "path": "canvas-fonts/YoungSerif-Regular.ttf",
+          "size": 105136,
+          "sha256": null
+        }
+      ],
       "bytes": 5552418
     },
     {
@@ -78,6 +925,13 @@
       "sourceRef": "main",
       "sourceUrl": "https://github.com/LeastBit/Anthropics_skills_zh-CN/tree/main/skills/doc-coauthoring",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 14924,
+          "sha256": "fda811ccbe7ce0738da69fb974b733a7dbaa591a419d424884b70d3698c249e1"
+        }
+      ],
       "bytes": 14924
     },
     {
@@ -89,6 +943,303 @@
       "sourceRef": "main",
       "sourceUrl": "https://github.com/LeastBit/Anthropics_skills_zh-CN/tree/main/skills/docx",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "size": 1467,
+          "sha256": null
+        },
+        {
+          "path": "SKILL.md",
+          "size": 9480,
+          "sha256": "5b8513111c730c5fb0c8dea66588f283b9ced3fed682841f968b54195d6305ec"
+        },
+        {
+          "path": "docx-js.md",
+          "size": 16669,
+          "sha256": null
+        },
+        {
+          "path": "ooxml.md",
+          "size": 22890,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/dml-chart.xsd",
+          "size": 74984,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd",
+          "size": 6956,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd",
+          "size": 51302,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd",
+          "size": 624,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/dml-main.xsd",
+          "size": 152039,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/dml-picture.xsd",
+          "size": 1231,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd",
+          "size": 8862,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd",
+          "size": 14795,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/pml.xsd",
+          "size": 83612,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd",
+          "size": 1269,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd",
+          "size": 7328,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd",
+          "size": 6382,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd",
+          "size": 1248,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd",
+          "size": 880,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd",
+          "size": 2608,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd",
+          "size": 3507,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd",
+          "size": 7507,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/shared-math.xsd",
+          "size": 23313,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/shared-relationshipReference.xsd",
+          "size": 1367,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/sml.xsd",
+          "size": 242277,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/vml-main.xsd",
+          "size": 26148,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd",
+          "size": 25279,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/vml-presentationDrawing.xsd",
+          "size": 535,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/vml-spreadsheetDrawing.xsd",
+          "size": 5712,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd",
+          "size": 4010,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/wml.xsd",
+          "size": 171367,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/xml.xsd",
+          "size": 4646,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ecma/fouth-edition/opc-contentTypes.xsd",
+          "size": 1963,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ecma/fouth-edition/opc-coreProperties.xsd",
+          "size": 2515,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ecma/fouth-edition/opc-digSig.xsd",
+          "size": 2856,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ecma/fouth-edition/opc-relationships.xsd",
+          "size": 1344,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/mce/mc.xsd",
+          "size": 3127,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/microsoft/wml-2010.xsd",
+          "size": 26549,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/microsoft/wml-2012.xsd",
+          "size": 3745,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/microsoft/wml-2018.xsd",
+          "size": 901,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/microsoft/wml-cex-2018.xsd",
+          "size": 1778,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/microsoft/wml-cid-2016.xsd",
+          "size": 1002,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/microsoft/wml-sdtdatahash-2020.xsd",
+          "size": 600,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/microsoft/wml-symex-2015.xsd",
+          "size": 745,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/scripts/pack.py",
+          "size": 5510,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/scripts/unpack.py",
+          "size": 1055,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/scripts/validate.py",
+          "size": 1949,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/scripts/validation/__init__.py",
+          "size": 330,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/scripts/validation/base.py",
+          "size": 39287,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/scripts/validation/docx.py",
+          "size": 9816,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/scripts/validation/pptx.py",
+          "size": 12235,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/scripts/validation/redlining.py",
+          "size": 10899,
+          "sha256": null
+        },
+        {
+          "path": "scripts/__init__.py",
+          "size": 69,
+          "sha256": null
+        },
+        {
+          "path": "scripts/document.py",
+          "size": 50156,
+          "sha256": null
+        },
+        {
+          "path": "scripts/templates/comments.xml",
+          "size": 2635,
+          "sha256": null
+        },
+        {
+          "path": "scripts/templates/commentsExtended.xml",
+          "size": 2643,
+          "sha256": null
+        },
+        {
+          "path": "scripts/templates/commentsExtensible.xml",
+          "size": 2739,
+          "sha256": null
+        },
+        {
+          "path": "scripts/templates/commentsIds.xml",
+          "size": 2651,
+          "sha256": null
+        },
+        {
+          "path": "scripts/templates/people.xml",
+          "size": 147,
+          "sha256": null
+        },
+        {
+          "path": "scripts/utilities.py",
+          "size": 13483,
+          "sha256": null
+        }
+      ],
       "bytes": 1183023
     },
     {
@@ -100,6 +1251,18 @@
       "sourceRef": "main",
       "sourceUrl": "https://github.com/LeastBit/Anthropics_skills_zh-CN/tree/main/skills/frontend-design",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "size": 10174,
+          "sha256": null
+        },
+        {
+          "path": "SKILL.md",
+          "size": 4117,
+          "sha256": "c39990187d9deba9cbb0def42b8eb74175e6604b474720db619a236ebd2a3561"
+        }
+      ],
       "bytes": 14291
     },
     {
@@ -111,6 +1274,18 @@
       "sourceRef": "main",
       "sourceUrl": "https://github.com/LeastBit/Anthropics_skills_zh-CN/tree/main/skills/internal-comms",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "size": 11357,
+          "sha256": null
+        },
+        {
+          "path": "SKILL.md",
+          "size": 1355,
+          "sha256": "de6df9072f896e2c98b9a9e12024974a870a7740bc644eb68a9be43657f7ca45"
+        }
+      ],
       "bytes": 12712
     },
     {
@@ -122,6 +1297,58 @@
       "sourceRef": "main",
       "sourceUrl": "https://github.com/LeastBit/Anthropics_skills_zh-CN/tree/main/skills/mcp-builder",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "size": 11357,
+          "sha256": null
+        },
+        {
+          "path": "SKILL.md",
+          "size": 8333,
+          "sha256": "b4e2c6ae2d4e2053d7e3d01a00c75b92dfbaeb9badafdf2be0f9134314379ff6"
+        },
+        {
+          "path": "reference/evaluation.md",
+          "size": 19049,
+          "sha256": null
+        },
+        {
+          "path": "reference/mcp_best_practices.md",
+          "size": 6612,
+          "sha256": null
+        },
+        {
+          "path": "reference/node_mcp_server.md",
+          "size": 27253,
+          "sha256": null
+        },
+        {
+          "path": "reference/python_mcp_server.md",
+          "size": 23822,
+          "sha256": null
+        },
+        {
+          "path": "scripts/connections.py",
+          "size": 4816,
+          "sha256": null
+        },
+        {
+          "path": "scripts/evaluation.py",
+          "size": 12448,
+          "sha256": null
+        },
+        {
+          "path": "scripts/example_evaluation.xml",
+          "size": 1194,
+          "sha256": null
+        },
+        {
+          "path": "scripts/requirements.txt",
+          "size": 29,
+          "sha256": null
+        }
+      ],
       "bytes": 114913
     },
     {
@@ -133,6 +1360,68 @@
       "sourceRef": "main",
       "sourceUrl": "https://github.com/LeastBit/Anthropics_skills_zh-CN/tree/main/skills/pdf",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "size": 1467,
+          "sha256": null
+        },
+        {
+          "path": "SKILL.md",
+          "size": 7017,
+          "sha256": "f3b58911fee0703d516c6c91b2246bc71dcb0f35dd9e7c7fa47815868d337f3a"
+        },
+        {
+          "path": "forms.md",
+          "size": 8716,
+          "sha256": null
+        },
+        {
+          "path": "reference.md",
+          "size": 16134,
+          "sha256": null
+        },
+        {
+          "path": "scripts/check_bounding_boxes.py",
+          "size": 3042,
+          "sha256": null
+        },
+        {
+          "path": "scripts/check_bounding_boxes_test.py",
+          "size": 8520,
+          "sha256": null
+        },
+        {
+          "path": "scripts/check_fillable_fields.py",
+          "size": 365,
+          "sha256": null
+        },
+        {
+          "path": "scripts/convert_pdf_to_images.py",
+          "size": 1139,
+          "sha256": null
+        },
+        {
+          "path": "scripts/create_validation_image.py",
+          "size": 1555,
+          "sha256": null
+        },
+        {
+          "path": "scripts/extract_form_field_info.py",
+          "size": 6060,
+          "sha256": null
+        },
+        {
+          "path": "scripts/fill_fillable_fields.py",
+          "size": 4771,
+          "sha256": null
+        },
+        {
+          "path": "scripts/fill_pdf_form_with_annotations.py",
+          "size": 3500,
+          "sha256": null
+        }
+      ],
       "bytes": 62286
     },
     {
@@ -144,6 +1433,288 @@
       "sourceRef": "main",
       "sourceUrl": "https://github.com/LeastBit/Anthropics_skills_zh-CN/tree/main/skills/pptx",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "size": 1467,
+          "sha256": null
+        },
+        {
+          "path": "SKILL.md",
+          "size": 24311,
+          "sha256": "51a0b1509a6b9a877c206ee0dae8f0cfb7780f54d4a2a1d2d8c91b607cf2f359"
+        },
+        {
+          "path": "html2pptx.md",
+          "size": 19950,
+          "sha256": null
+        },
+        {
+          "path": "ooxml.md",
+          "size": 10258,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/dml-chart.xsd",
+          "size": 74984,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd",
+          "size": 6956,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd",
+          "size": 51302,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd",
+          "size": 624,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/dml-main.xsd",
+          "size": 152039,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/dml-picture.xsd",
+          "size": 1231,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd",
+          "size": 8862,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd",
+          "size": 14795,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/pml.xsd",
+          "size": 83612,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd",
+          "size": 1269,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd",
+          "size": 7328,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd",
+          "size": 6382,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd",
+          "size": 1248,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd",
+          "size": 880,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd",
+          "size": 2608,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd",
+          "size": 3507,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd",
+          "size": 7507,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/shared-math.xsd",
+          "size": 23313,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/shared-relationshipReference.xsd",
+          "size": 1367,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/sml.xsd",
+          "size": 242277,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/vml-main.xsd",
+          "size": 26148,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd",
+          "size": 25279,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/vml-presentationDrawing.xsd",
+          "size": 535,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/vml-spreadsheetDrawing.xsd",
+          "size": 5712,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd",
+          "size": 4010,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/wml.xsd",
+          "size": 171367,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ISO-IEC29500-4_2016/xml.xsd",
+          "size": 4646,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ecma/fouth-edition/opc-contentTypes.xsd",
+          "size": 1963,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ecma/fouth-edition/opc-coreProperties.xsd",
+          "size": 2515,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ecma/fouth-edition/opc-digSig.xsd",
+          "size": 2856,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/ecma/fouth-edition/opc-relationships.xsd",
+          "size": 1344,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/mce/mc.xsd",
+          "size": 3127,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/microsoft/wml-2010.xsd",
+          "size": 26549,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/microsoft/wml-2012.xsd",
+          "size": 3745,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/microsoft/wml-2018.xsd",
+          "size": 901,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/microsoft/wml-cex-2018.xsd",
+          "size": 1778,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/microsoft/wml-cid-2016.xsd",
+          "size": 1002,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/microsoft/wml-sdtdatahash-2020.xsd",
+          "size": 600,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/schemas/microsoft/wml-symex-2015.xsd",
+          "size": 745,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/scripts/pack.py",
+          "size": 5596,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/scripts/unpack.py",
+          "size": 1037,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/scripts/validate.py",
+          "size": 1959,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/scripts/validation/__init__.py",
+          "size": 336,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/scripts/validation/base.py",
+          "size": 39892,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/scripts/validation/docx.py",
+          "size": 9996,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/scripts/validation/pptx.py",
+          "size": 12327,
+          "sha256": null
+        },
+        {
+          "path": "ooxml/scripts/validation/redlining.py",
+          "size": 11179,
+          "sha256": null
+        },
+        {
+          "path": "scripts/html2pptx.js",
+          "size": 37572,
+          "sha256": null
+        },
+        {
+          "path": "scripts/inventory.py",
+          "size": 38126,
+          "sha256": null
+        },
+        {
+          "path": "scripts/rearrange.py",
+          "size": 8514,
+          "sha256": null
+        },
+        {
+          "path": "scripts/replace.py",
+          "size": 13594,
+          "sha256": null
+        },
+        {
+          "path": "scripts/thumbnail.py",
+          "size": 15484,
+          "sha256": null
+        }
+      ],
       "bytes": 1228511
     },
     {
@@ -155,6 +1726,43 @@
       "sourceRef": "main",
       "sourceUrl": "https://github.com/LeastBit/Anthropics_skills_zh-CN/tree/main/skills/skill-creator",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "size": 11357,
+          "sha256": null
+        },
+        {
+          "path": "SKILL.md",
+          "size": 16074,
+          "sha256": "dc96a832ef4bed242a65a4f49113ca18113687bc8856d1ff649faa0b8a9dd46a"
+        },
+        {
+          "path": "references/output-patterns.md",
+          "size": 1577,
+          "sha256": null
+        },
+        {
+          "path": "references/workflows.md",
+          "size": 795,
+          "sha256": null
+        },
+        {
+          "path": "scripts/init_skill.py",
+          "size": 10132,
+          "sha256": null
+        },
+        {
+          "path": "scripts/package_skill.py",
+          "size": 3256,
+          "sha256": null
+        },
+        {
+          "path": "scripts/quick_validate.py",
+          "size": 3543,
+          "sha256": null
+        }
+      ],
       "bytes": 46734
     },
     {
@@ -166,6 +1774,43 @@
       "sourceRef": "main",
       "sourceUrl": "https://github.com/LeastBit/Anthropics_skills_zh-CN/tree/main/skills/slack-gif-creator",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "size": 11357,
+          "sha256": null
+        },
+        {
+          "path": "SKILL.md",
+          "size": 7684,
+          "sha256": "2c89f32047ed8efed54445167e5fec1d6edbec281e7b060abc2a70a1b02fd7ad"
+        },
+        {
+          "path": "core/easing.py",
+          "size": 6269,
+          "sha256": null
+        },
+        {
+          "path": "core/frame_composer.py",
+          "size": 4573,
+          "sha256": null
+        },
+        {
+          "path": "core/gif_builder.py",
+          "size": 9839,
+          "sha256": null
+        },
+        {
+          "path": "core/validators.py",
+          "size": 3862,
+          "sha256": null
+        },
+        {
+          "path": "requirements.txt",
+          "size": 66,
+          "sha256": null
+        }
+      ],
       "bytes": 43650
     },
     {
@@ -177,6 +1822,68 @@
       "sourceRef": "main",
       "sourceUrl": "https://github.com/LeastBit/Anthropics_skills_zh-CN/tree/main/skills/theme-factory",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "size": 11357,
+          "sha256": null
+        },
+        {
+          "path": "SKILL.md",
+          "size": 2662,
+          "sha256": "556ed94bb862d8f92e7fe1a8a7b7d837b600c85436747211de2878a20c0d6e47"
+        },
+        {
+          "path": "themes/arctic-frost.md",
+          "size": 498,
+          "sha256": null
+        },
+        {
+          "path": "themes/botanical-garden.md",
+          "size": 511,
+          "sha256": null
+        },
+        {
+          "path": "themes/desert-rose.md",
+          "size": 480,
+          "sha256": null
+        },
+        {
+          "path": "themes/forest-canopy.md",
+          "size": 475,
+          "sha256": null
+        },
+        {
+          "path": "themes/golden-hour.md",
+          "size": 477,
+          "sha256": null
+        },
+        {
+          "path": "themes/midnight-galaxy.md",
+          "size": 489,
+          "sha256": null
+        },
+        {
+          "path": "themes/modern-minimalist.md",
+          "size": 489,
+          "sha256": null
+        },
+        {
+          "path": "themes/ocean-depths.md",
+          "size": 477,
+          "sha256": null
+        },
+        {
+          "path": "themes/sunset-boulevard.md",
+          "size": 496,
+          "sha256": null
+        },
+        {
+          "path": "themes/tech-innovation.md",
+          "size": 495,
+          "sha256": null
+        }
+      ],
       "bytes": 18906
     },
     {
@@ -188,6 +1895,28 @@
       "sourceRef": "main",
       "sourceUrl": "https://github.com/LeastBit/Anthropics_skills_zh-CN/tree/main/skills/web-artifacts-builder",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "size": 11357,
+          "sha256": null
+        },
+        {
+          "path": "SKILL.md",
+          "size": 3069,
+          "sha256": "c88cc51f78822ca067fb3f71de057e886d8358a66e2714a4698a2bf2f1580817"
+        },
+        {
+          "path": "scripts/bundle-artifact.sh",
+          "size": 1558,
+          "sha256": null
+        },
+        {
+          "path": "scripts/init-artifact.sh",
+          "size": 9924,
+          "sha256": null
+        }
+      ],
       "bytes": 25908
     },
     {
@@ -199,6 +1928,23 @@
       "sourceRef": "main",
       "sourceUrl": "https://github.com/LeastBit/Anthropics_skills_zh-CN/tree/main/skills/webapp-testing",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "size": 11357,
+          "sha256": null
+        },
+        {
+          "path": "SKILL.md",
+          "size": 3842,
+          "sha256": "362015622eee9718448d0ee126b08a34eaf27f164e1c4b9a084124a6d4e4849e"
+        },
+        {
+          "path": "scripts/with_server.py",
+          "size": 3819,
+          "sha256": null
+        }
+      ],
       "bytes": 19018
     },
     {
@@ -210,6 +1956,23 @@
       "sourceRef": "main",
       "sourceUrl": "https://github.com/LeastBit/Anthropics_skills_zh-CN/tree/main/skills/xlsx",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "size": 1467,
+          "sha256": null
+        },
+        {
+          "path": "SKILL.md",
+          "size": 10193,
+          "sha256": "30b178251983cf9efe17c09d39e4eed9d60f42353bfb0ab963c72e9386093678"
+        },
+        {
+          "path": "recalc.py",
+          "size": 6238,
+          "sha256": null
+        }
+      ],
       "bytes": 17898
     },
     {
@@ -221,6 +1984,13 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/01-agent-engineering/adaptive-quality-gate",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 10387,
+          "sha256": "7acd4e1927d3824bb0fb6fb1a35ed755a847b200f77c42b1e4d64269067975b9"
+        }
+      ],
       "bytes": 10387
     },
     {
@@ -232,6 +2002,13 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/01-agent-engineering/deep-research",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 4798,
+          "sha256": "f85e06874ffd0fcfea6051b4292f45fc2b7e4cd47586659817ddbafd6bea3ede"
+        }
+      ],
       "bytes": 4798
     },
     {
@@ -243,6 +2020,13 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/01-agent-engineering/find-skills",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 5427,
+          "sha256": "87b2d48072b3d0a43af7163ecbf5e1cdc49622e7d139d89f8b12a096c187218e"
+        }
+      ],
       "bytes": 5427
     },
     {
@@ -254,6 +2038,28 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/01-agent-engineering/project-cleanup-audit",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 6836,
+          "sha256": "d39b87746f261d33e040f4fdf50f39863d21c552189f00769a072c13d45c03b1"
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 251,
+          "sha256": null
+        },
+        {
+          "path": "references/classification.md",
+          "size": 4126,
+          "sha256": null
+        },
+        {
+          "path": "scripts/audit_repo_cleanup.ps1",
+          "size": 15789,
+          "sha256": null
+        }
+      ],
       "bytes": 27002
     },
     {
@@ -265,6 +2071,13 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/01-agent-engineering/santa-method",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 12793,
+          "sha256": "1dfb6ecf99268978cc5f8e168db08fc5a364b55ffa86d0fb6ce43bae7fc9015b"
+        }
+      ],
       "bytes": 12793
     },
     {
@@ -276,6 +2089,33 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/01-agent-engineering/skill-lifecycle-manager",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 9707,
+          "sha256": "394752e64a8520275d17bcca8e7feac703133ddb113238a45d37e6d8f66b3348"
+        },
+        {
+          "path": "references/governance-and-reporting.md",
+          "size": 5713,
+          "sha256": null
+        },
+        {
+          "path": "references/skill-hub-operations.md",
+          "size": 5084,
+          "sha256": null
+        },
+        {
+          "path": "references/upstream-audit.md",
+          "size": 4472,
+          "sha256": null
+        },
+        {
+          "path": "scripts/check_upstreams.ps1",
+          "size": 19955,
+          "sha256": null
+        }
+      ],
       "bytes": 44931
     },
     {
@@ -287,6 +2127,13 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/02-coding-languages/swift/liquid-glass-design",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 9045,
+          "sha256": "024aa207eb3d4d31d868954a7352a40b78c61f2fd007ab8b452afb6217070f84"
+        }
+      ],
       "bytes": 9045
     },
     {
@@ -298,6 +2145,28 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/03-frameworks/netlify-cli",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "README.md",
+          "size": 1664,
+          "sha256": null
+        },
+        {
+          "path": "SKILL.md",
+          "size": 4087,
+          "sha256": "968403fe5cb9f9d84b6337deb4f3aeb93823778bcb11c9533e3ae2c0f05dc731"
+        },
+        {
+          "path": "assets/.gitkeep",
+          "size": 0,
+          "sha256": null
+        },
+        {
+          "path": "docs/beginner-guide.pdf",
+          "size": 402216,
+          "sha256": null
+        }
+      ],
       "bytes": 407967
     },
     {
@@ -309,6 +2178,28 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/06-data-search/bioc-fulltext-fetch",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 10765,
+          "sha256": "9f86e2dff7202d451ed2bd511b8121614abf72dc05c9c8c1f422f490505b5e11"
+        },
+        {
+          "path": "references/bioc-format-spec.md",
+          "size": 3686,
+          "sha256": null
+        },
+        {
+          "path": "references/chunking-strategies.md",
+          "size": 5005,
+          "sha256": null
+        },
+        {
+          "path": "references/rag-integration.md",
+          "size": 4377,
+          "sha256": null
+        }
+      ],
       "bytes": 23833
     },
     {
@@ -320,6 +2211,18 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/06-data-search/clinical-trials-v2",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 14341,
+          "sha256": "ca63ff56078355e99e47c9d78df31c67c3bfbf5e04ae70cdeabb0d17598c6bf7"
+        },
+        {
+          "path": "references/enums-and-endpoints.md",
+          "size": 5433,
+          "sha256": null
+        }
+      ],
       "bytes": 19774
     },
     {
@@ -331,6 +2234,93 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/06-data-search/cn-clinical-guidelines-fetch",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 9697,
+          "sha256": "dc4773c68e8a42fbe5465b69de23f6299d31137e5319cc59a797dcd9de677b51"
+        },
+        {
+          "path": "references/CSCO-2024-NSCLC.meta.json",
+          "size": 618,
+          "sha256": null
+        },
+        {
+          "path": "references/CSCO-2024-NSCLC.raw.txt",
+          "size": 2544,
+          "sha256": null
+        },
+        {
+          "path": "references/NMPA-ALK-TKI-status.json",
+          "size": 1308,
+          "sha256": null
+        },
+        {
+          "path": "references/failure-modes.md",
+          "size": 2062,
+          "sha256": null
+        },
+        {
+          "path": "references/source-priority.md",
+          "size": 2014,
+          "sha256": null
+        },
+        {
+          "path": "references/treatment-table-schema.md",
+          "size": 2711,
+          "sha256": null
+        },
+        {
+          "path": "scripts/__init__.py",
+          "size": 279,
+          "sha256": null
+        },
+        {
+          "path": "scripts/_cache.py",
+          "size": 1460,
+          "sha256": null
+        },
+        {
+          "path": "scripts/_cde.py",
+          "size": 457,
+          "sha256": null
+        },
+        {
+          "path": "scripts/_csco.py",
+          "size": 13782,
+          "sha256": null
+        },
+        {
+          "path": "scripts/_nccn.py",
+          "size": 670,
+          "sha256": null
+        },
+        {
+          "path": "scripts/_nhc.py",
+          "size": 500,
+          "sha256": null
+        },
+        {
+          "path": "scripts/_nmpa.py",
+          "size": 2313,
+          "sha256": null
+        },
+        {
+          "path": "scripts/_pdf_parser.py",
+          "size": 1351,
+          "sha256": null
+        },
+        {
+          "path": "scripts/_provenance.py",
+          "size": 5726,
+          "sha256": null
+        },
+        {
+          "path": "scripts/fetcher.py",
+          "size": 11120,
+          "sha256": null
+        }
+      ],
       "bytes": 58612
     },
     {
@@ -342,6 +2332,13 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/06-data-search/data-scraper-agent",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 24084,
+          "sha256": "f5efab367741dbfae96105d4cc983842f28baa69b2b17dcf9216f1f6ef0e9a9f"
+        }
+      ],
       "bytes": 24084
     },
     {
@@ -353,6 +2350,28 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/06-data-search/europepmc-search",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 14830,
+          "sha256": "9ae4bc9d89d50dabc2997387dfe25a5c1b0bb7459c0f6b526a337a97cfe4ffc0"
+        },
+        {
+          "path": "references/cursormark-pagination.md",
+          "size": 2522,
+          "sha256": null
+        },
+        {
+          "path": "references/query-syntax.md",
+          "size": 2847,
+          "sha256": null
+        },
+        {
+          "path": "references/source-filters.md",
+          "size": 2178,
+          "sha256": null
+        }
+      ],
       "bytes": 22377
     },
     {
@@ -364,6 +2383,13 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/06-data-search/evidence-appendix-sync",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 33404,
+          "sha256": "7794c8aa48e260f67cef027cd9ac5533b547f4aa580a3b50e9af932d6a511c7a"
+        }
+      ],
       "bytes": 33404
     },
     {
@@ -375,6 +2401,48 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/06-data-search/market-research-reports",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 28843,
+          "sha256": "c95dbc1f23f7aa42a2e72d5fea2be308471472481383ca397f27cda91cba72c3"
+        },
+        {
+          "path": "assets/FORMATTING_GUIDE.md",
+          "size": 10110,
+          "sha256": null
+        },
+        {
+          "path": "assets/market_report_template.tex",
+          "size": 50218,
+          "sha256": null
+        },
+        {
+          "path": "assets/market_research.sty",
+          "size": 15617,
+          "sha256": null
+        },
+        {
+          "path": "references/data_analysis_patterns.md",
+          "size": 17690,
+          "sha256": null
+        },
+        {
+          "path": "references/report_structure_guide.md",
+          "size": 23572,
+          "sha256": null
+        },
+        {
+          "path": "references/visual_generation_guide.md",
+          "size": 37281,
+          "sha256": null
+        },
+        {
+          "path": "scripts/generate_market_visuals.py",
+          "size": 20423,
+          "sha256": null
+        }
+      ],
       "bytes": 203754
     },
     {
@@ -386,6 +2454,18 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/06-data-search/market-sizing-mece-foundation",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 37239,
+          "sha256": "7eac367d5b75bbf4cc21b4a79fd892c049e56c8342a152fb06fbf74fd777dc25"
+        },
+        {
+          "path": "references/flowchart-validator.py",
+          "size": 10527,
+          "sha256": null
+        }
+      ],
       "bytes": 47766
     },
     {
@@ -397,6 +2477,33 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/06-data-search/medical-evidence-grading",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 13929,
+          "sha256": "056ab7f3eee61249c81afce2faf6bf54610c1ecafc18f949155804654e2e98ed"
+        },
+        {
+          "path": "references/biomcp-integration.md",
+          "size": 5606,
+          "sha256": null
+        },
+        {
+          "path": "references/cache-schema.md",
+          "size": 4955,
+          "sha256": null
+        },
+        {
+          "path": "references/clinical-queries-mapping.md",
+          "size": 3804,
+          "sha256": null
+        },
+        {
+          "path": "references/grade-rules.md",
+          "size": 4998,
+          "sha256": null
+        }
+      ],
       "bytes": 33292
     },
     {
@@ -408,6 +2515,28 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/06-data-search/medical-research",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "EXAMPLES.md",
+          "size": 15151,
+          "sha256": null
+        },
+        {
+          "path": "README.md",
+          "size": 8829,
+          "sha256": null
+        },
+        {
+          "path": "SKILL.md",
+          "size": 11772,
+          "sha256": "62e7acda590e2dd816b2d00e62738c6f89ec01f882f1f108967920311f50facc"
+        },
+        {
+          "path": "pubmed_search.py",
+          "size": 3492,
+          "sha256": null
+        }
+      ],
       "bytes": 39244
     },
     {
@@ -419,6 +2548,63 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/06-data-search/nmpa-drug-registry-lookup",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 11998,
+          "sha256": "a71129e628daeb9f73d8628bfd386ee0e8de96c3c22c4c5413f85c13e41fa687"
+        },
+        {
+          "path": "references/drugbank-integration.md",
+          "size": 1581,
+          "sha256": null
+        },
+        {
+          "path": "references/failure-modes.md",
+          "size": 2781,
+          "sha256": null
+        },
+        {
+          "path": "references/nmpa-fetch-api.md",
+          "size": 2015,
+          "sha256": null
+        },
+        {
+          "path": "scripts/__init__.py",
+          "size": 601,
+          "sha256": null
+        },
+        {
+          "path": "scripts/_cache.py",
+          "size": 2633,
+          "sha256": null
+        },
+        {
+          "path": "scripts/_cde.py",
+          "size": 1096,
+          "sha256": null
+        },
+        {
+          "path": "scripts/_drugbank.py",
+          "size": 1089,
+          "sha256": null
+        },
+        {
+          "path": "scripts/_known_drugs_fallback.py",
+          "size": 8855,
+          "sha256": null
+        },
+        {
+          "path": "scripts/_nmpa.py",
+          "size": 3394,
+          "sha256": null
+        },
+        {
+          "path": "scripts/registry.py",
+          "size": 8370,
+          "sha256": null
+        }
+      ],
       "bytes": 44413
     },
     {
@@ -430,6 +2616,23 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/06-data-search/pubmed-eutils",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 13179,
+          "sha256": "998ceaa405fb87725ae4903f41a118a291655ad648162e4dfe96d3edad7fd9ca"
+        },
+        {
+          "path": "references/endpoint-table.md",
+          "size": 2883,
+          "sha256": null
+        },
+        {
+          "path": "references/query-templates.md",
+          "size": 1867,
+          "sha256": null
+        }
+      ],
       "bytes": 17929
     },
     {
@@ -441,6 +2644,23 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/06-data-search/pubmed-search",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 5730,
+          "sha256": "9cfc8fea968a38db97139aa3d427490d32fa0191ee2e295f6edf347dfadebe2a"
+        },
+        {
+          "path": "scripts/search",
+          "size": 388,
+          "sha256": null
+        },
+        {
+          "path": "scripts/search.mjs",
+          "size": 3643,
+          "sha256": null
+        }
+      ],
       "bytes": 9761
     },
     {
@@ -452,6 +2672,23 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/06-data-search/pubtator-entity-search",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 11032,
+          "sha256": "3b30ff7d363a66b10524fabfef160bb855d9141e7b080c274d64f8db0f36e9cd"
+        },
+        {
+          "path": "references/entity-types.md",
+          "size": 4717,
+          "sha256": null
+        },
+        {
+          "path": "references/relation-types.md",
+          "size": 5247,
+          "sha256": null
+        }
+      ],
       "bytes": 20996
     },
     {
@@ -463,6 +2700,63 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/06-data-search/report-bundle-builder",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 8516,
+          "sha256": "218413b3321e2e2d6c03869da12d5b831476eeb9529ae752f12aae376e29aae2"
+        },
+        {
+          "path": "references/bundle-manifest-spec.md",
+          "size": 3899,
+          "sha256": null
+        },
+        {
+          "path": "references/chrome-headless-setup.md",
+          "size": 2433,
+          "sha256": null
+        },
+        {
+          "path": "scripts/__init__.py",
+          "size": 63,
+          "sha256": null
+        },
+        {
+          "path": "scripts/_persist_sub_pages.py",
+          "size": 1780,
+          "sha256": null
+        },
+        {
+          "path": "scripts/_validate.py",
+          "size": 534,
+          "sha256": null
+        },
+        {
+          "path": "scripts/build_all.py",
+          "size": 5781,
+          "sha256": null
+        },
+        {
+          "path": "scripts/build_pdf.py",
+          "size": 8287,
+          "sha256": null
+        },
+        {
+          "path": "scripts/build_standalone_html.py",
+          "size": 9056,
+          "sha256": null
+        },
+        {
+          "path": "scripts/build_xlsx.py",
+          "size": 4644,
+          "sha256": null
+        },
+        {
+          "path": "scripts/builder.py",
+          "size": 4949,
+          "sha256": null
+        }
+      ],
       "bytes": 49942
     },
     {
@@ -474,6 +2768,28 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/07-media-content/github-readme-visuals",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 9514,
+          "sha256": "619f714cf910f33b75f2da466ebfe2ab967c37a505c0caaeb49a4f3c5c5b2916"
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 269,
+          "sha256": null
+        },
+        {
+          "path": "references/visual-checklist.md",
+          "size": 4611,
+          "sha256": null
+        },
+        {
+          "path": "scripts/verify_readme_visuals.py",
+          "size": 5706,
+          "sha256": null
+        }
+      ],
       "bytes": 20100
     },
     {
@@ -485,6 +2801,23 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/07-media-content/html-design-polish",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "README.md",
+          "size": 2159,
+          "sha256": null
+        },
+        {
+          "path": "SKILL.md",
+          "size": 16368,
+          "sha256": "3f473c3372ead33d1517a93a655b8b0bd277e45c120e4fedc20b429817457fdb"
+        },
+        {
+          "path": "docs/.gitkeep",
+          "size": 0,
+          "sha256": null
+        }
+      ],
       "bytes": 18527
     },
     {
@@ -496,6 +2829,63 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/07-media-content/imagegen",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "size": 10776,
+          "sha256": null
+        },
+        {
+          "path": "SKILL.md",
+          "size": 16204,
+          "sha256": "826d05b806d51fa81cd650f1c0854b0a1f7fbccd1b152c588ded1797a2e7218f"
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 918,
+          "sha256": null
+        },
+        {
+          "path": "assets/imagegen-small.svg",
+          "size": 2889,
+          "sha256": null
+        },
+        {
+          "path": "assets/imagegen.png",
+          "size": 1711,
+          "sha256": null
+        },
+        {
+          "path": "references/cli.md",
+          "size": 6257,
+          "sha256": null
+        },
+        {
+          "path": "references/codex-network.md",
+          "size": 1620,
+          "sha256": null
+        },
+        {
+          "path": "references/image-api.md",
+          "size": 2500,
+          "sha256": null
+        },
+        {
+          "path": "references/prompting.md",
+          "size": 6462,
+          "sha256": null
+        },
+        {
+          "path": "references/sample-prompts.md",
+          "size": 14789,
+          "sha256": null
+        },
+        {
+          "path": "scripts/image_gen.py",
+          "size": 31856,
+          "sha256": null
+        }
+      ],
       "bytes": 95982
     },
     {
@@ -507,6 +2897,808 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/07-media-content/jianying-editor",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "README.md",
+          "size": 12606,
+          "sha256": null
+        },
+        {
+          "path": "SKILL.md",
+          "size": 9723,
+          "sha256": "7e58f444c47dbe02ce4c155fbcc9babe4155cb6d3a4e3ea9fec00a5d2aab0f1e"
+        },
+        {
+          "path": "VERSION",
+          "size": 6,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7127669365423508767/ac476c738e3109c848bfe76f9df8eced/config.json",
+          "size": 109,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7127669365423508767/ac476c738e3109c848bfe76f9df8eced/content.json",
+          "size": 283,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7127669365423508767/ac476c738e3109c848bfe76f9df8eced/effect.prefab",
+          "size": 3481,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7127669365423508767/ac476c738e3109c848bfe76f9df8eced/image/1.png",
+          "size": 23871,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7127669365423508767/ac476c738e3109c848bfe76f9df8eced/image/1.png.meta",
+          "size": 262,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7127669365423508767/ac476c738e3109c848bfe76f9df8eced/main.scene",
+          "size": 4392,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7127669365423508767/ac476c738e3109c848bfe76f9df8eced/material/effect.material",
+          "size": 440,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7127669365423508767/ac476c738e3109c848bfe76f9df8eced/material/shadow.material",
+          "size": 493,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7127669365423508767/ac476c738e3109c848bfe76f9df8eced/rt/outputTex.rt",
+          "size": 417,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7127669365423508767/ac476c738e3109c848bfe76f9df8eced/sticker.config",
+          "size": 374,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7127669365423508767/ac476c738e3109c848bfe76f9df8eced/texture/lieheng.png",
+          "size": 17914,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7127669365423508767/ac476c738e3109c848bfe76f9df8eced/texture/lieheng.png.meta",
+          "size": 262,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7127669365423508767/ac476c738e3109c848bfe76f9df8eced/xshader/depth.frag",
+          "size": 200,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7127669365423508767/ac476c738e3109c848bfe76f9df8eced/xshader/effect.frag",
+          "size": 12838,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7127669365423508767/ac476c738e3109c848bfe76f9df8eced/xshader/effect.vert",
+          "size": 956,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7127669365423508767/ac476c738e3109c848bfe76f9df8eced/xshader/effect.xshader",
+          "size": 2846,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7127669365423508767/ac476c738e3109c848bfe76f9df8eced/xshader/shadow.xshader",
+          "size": 2846,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7187739440347958589/266eb863a42498a72c5c67bb8845c24c/config.json",
+          "size": 109,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7187739440347958589/266eb863a42498a72c5c67bb8845c24c/content.json",
+          "size": 304,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7187739440347958589/266eb863a42498a72c5c67bb8845c24c/effect.prefab",
+          "size": 3110,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7187739440347958589/266eb863a42498a72c5c67bb8845c24c/image/红碎屑.png",
+          "size": 8666,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7187739440347958589/266eb863a42498a72c5c67bb8845c24c/image/红碎屑.png.meta",
+          "size": 262,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7187739440347958589/266eb863a42498a72c5c67bb8845c24c/main.scene",
+          "size": 4021,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7187739440347958589/266eb863a42498a72c5c67bb8845c24c/material/effect.material",
+          "size": 440,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7187739440347958589/266eb863a42498a72c5c67bb8845c24c/material/shadow.material",
+          "size": 493,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7187739440347958589/266eb863a42498a72c5c67bb8845c24c/rt/outputTex.rt",
+          "size": 417,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7187739440347958589/266eb863a42498a72c5c67bb8845c24c/sticker.config",
+          "size": 374,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7187739440347958589/266eb863a42498a72c5c67bb8845c24c/texture/122.texture",
+          "size": 325706,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7187739440347958589/266eb863a42498a72c5c67bb8845c24c/texture/lieheng.png",
+          "size": 17914,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7187739440347958589/266eb863a42498a72c5c67bb8845c24c/texture/lieheng.png.meta",
+          "size": 262,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7187739440347958589/266eb863a42498a72c5c67bb8845c24c/xshader/depth.frag",
+          "size": 200,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7187739440347958589/266eb863a42498a72c5c67bb8845c24c/xshader/effect.frag",
+          "size": 13337,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7187739440347958589/266eb863a42498a72c5c67bb8845c24c/xshader/effect.vert",
+          "size": 956,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7187739440347958589/266eb863a42498a72c5c67bb8845c24c/xshader/effect.xshader",
+          "size": 2846,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7187739440347958589/266eb863a42498a72c5c67bb8845c24c/xshader/shadow.xshader",
+          "size": 2846,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7351316503771368713/95cd57a11522b49969efe0210afb1044/1709118789822.png",
+          "size": 129603,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7351316503771368713/95cd57a11522b49969efe0210afb1044/config.json",
+          "size": 143,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7351316503771368713/95cd57a11522b49969efe0210afb1044/cover_icon.png",
+          "size": 12097,
+          "sha256": null
+        },
+        {
+          "path": "assets/artistEffect/7351316503771368713/95cd57a11522b49969efe0210afb1044/effectStyle.json",
+          "size": 3589,
+          "sha256": null
+        },
+        {
+          "path": "assets/audio.mp3",
+          "size": 130869,
+          "sha256": null
+        },
+        {
+          "path": "assets/click_marker.png",
+          "size": 754,
+          "sha256": null
+        },
+        {
+          "path": "assets/subtitle.srt",
+          "size": 239,
+          "sha256": null
+        },
+        {
+          "path": "assets/使用思路.jpg",
+          "size": 211549,
+          "sha256": null
+        },
+        {
+          "path": "assets/快速上手.png",
+          "size": 70133,
+          "sha256": null
+        },
+        {
+          "path": "assets/片段特效_annotation.jpg",
+          "size": 12946,
+          "sha256": null
+        },
+        {
+          "path": "data/cloud_music_library.csv",
+          "size": 261765,
+          "sha256": null
+        },
+        {
+          "path": "data/cloud_sound_effects.csv",
+          "size": 2493,
+          "sha256": null
+        },
+        {
+          "path": "data/cloud_text_styles.csv",
+          "size": 438,
+          "sha256": null
+        },
+        {
+          "path": "data/cloud_video_assets.csv",
+          "size": 88835,
+          "sha256": null
+        },
+        {
+          "path": "data/filters.csv",
+          "size": 32998,
+          "sha256": null
+        },
+        {
+          "path": "data/jy_cached_audio.csv",
+          "size": 263,
+          "sha256": null
+        },
+        {
+          "path": "data/text_animations.csv",
+          "size": 6251,
+          "sha256": null
+        },
+        {
+          "path": "data/transitions.csv",
+          "size": 19034,
+          "sha256": null
+        },
+        {
+          "path": "data/tts_speakers.csv",
+          "size": 7871,
+          "sha256": null
+        },
+        {
+          "path": "data/video_intro_animations.csv",
+          "size": 7769,
+          "sha256": null
+        },
+        {
+          "path": "data/video_outro_animations.csv",
+          "size": 6207,
+          "sha256": null
+        },
+        {
+          "path": "data/video_scene_effects.csv",
+          "size": 63838,
+          "sha256": null
+        },
+        {
+          "path": "docs/agent-playbook.md",
+          "size": 2290,
+          "sha256": null
+        },
+        {
+          "path": "docs/api.md",
+          "size": 3196,
+          "sha256": null
+        },
+        {
+          "path": "docs/images/donate/alipay.jpg",
+          "size": 110328,
+          "sha256": null
+        },
+        {
+          "path": "docs/images/donate/wechat.png",
+          "size": 138370,
+          "sha256": null
+        },
+        {
+          "path": "docs/minimal-command-sop.md",
+          "size": 1969,
+          "sha256": null
+        },
+        {
+          "path": "index.html",
+          "size": 30953,
+          "sha256": null
+        },
+        {
+          "path": "prompts/movie_commentary.md",
+          "size": 1227,
+          "sha256": null
+        },
+        {
+          "path": "prompts/readme_to_tutorial.md",
+          "size": 3025,
+          "sha256": null
+        },
+        {
+          "path": "pyproject.toml",
+          "size": 262,
+          "sha256": null
+        },
+        {
+          "path": "references/AVAILABLE_ASSETS.md",
+          "size": 71879,
+          "sha256": null
+        },
+        {
+          "path": "references/README.md",
+          "size": 30272,
+          "sha256": null
+        },
+        {
+          "path": "references/draft_folder.py",
+          "size": 176,
+          "sha256": null
+        },
+        {
+          "path": "references/full_feature_showcase.py",
+          "size": 8140,
+          "sha256": null
+        },
+        {
+          "path": "references/jianying_controller.py",
+          "size": 190,
+          "sha256": null
+        },
+        {
+          "path": "references/script_file.py",
+          "size": 174,
+          "sha256": null
+        },
+        {
+          "path": "references/video_analysis_template.py",
+          "size": 4054,
+          "sha256": null
+        },
+        {
+          "path": "requirements.txt",
+          "size": 191,
+          "sha256": null
+        },
+        {
+          "path": "rules/audio-voice.md",
+          "size": 1950,
+          "sha256": null
+        },
+        {
+          "path": "rules/cli.md",
+          "size": 1357,
+          "sha256": null
+        },
+        {
+          "path": "rules/core.md",
+          "size": 3070,
+          "sha256": null
+        },
+        {
+          "path": "rules/effects.md",
+          "size": 2072,
+          "sha256": null
+        },
+        {
+          "path": "rules/generative.md",
+          "size": 1388,
+          "sha256": null
+        },
+        {
+          "path": "rules/keyframes.md",
+          "size": 2509,
+          "sha256": null
+        },
+        {
+          "path": "rules/media.md",
+          "size": 3251,
+          "sha256": null
+        },
+        {
+          "path": "rules/recording.md",
+          "size": 2242,
+          "sha256": null
+        },
+        {
+          "path": "rules/setup.md",
+          "size": 2175,
+          "sha256": null
+        },
+        {
+          "path": "rules/text.md",
+          "size": 4474,
+          "sha256": null
+        },
+        {
+          "path": "rules/web-vfx.md",
+          "size": 2476,
+          "sha256": null
+        },
+        {
+          "path": "scripts/api_validator.py",
+          "size": 4648,
+          "sha256": null
+        },
+        {
+          "path": "scripts/asset_search.py",
+          "size": 6263,
+          "sha256": null
+        },
+        {
+          "path": "scripts/auto_exporter.py",
+          "size": 3369,
+          "sha256": null
+        },
+        {
+          "path": "scripts/build_cloud_music_library.py",
+          "size": 8212,
+          "sha256": null
+        },
+        {
+          "path": "scripts/build_cloud_text_styles_library.py",
+          "size": 6126,
+          "sha256": null
+        },
+        {
+          "path": "scripts/cloud_manager.py",
+          "size": 14111,
+          "sha256": null
+        },
+        {
+          "path": "scripts/core/media_ops.py",
+          "size": 9030,
+          "sha256": null
+        },
+        {
+          "path": "scripts/core/mocking_ops.py",
+          "size": 5045,
+          "sha256": null
+        },
+        {
+          "path": "scripts/core/project_base.py",
+          "size": 8375,
+          "sha256": null
+        },
+        {
+          "path": "scripts/core/text_ops.py",
+          "size": 9053,
+          "sha256": null
+        },
+        {
+          "path": "scripts/core/vfx_ops.py",
+          "size": 2493,
+          "sha256": null
+        },
+        {
+          "path": "scripts/draft_inspector.py",
+          "size": 6782,
+          "sha256": null
+        },
+        {
+          "path": "scripts/jy_wrapper.py",
+          "size": 2541,
+          "sha256": null
+        },
+        {
+          "path": "scripts/movie_commentary_builder.py",
+          "size": 3579,
+          "sha256": null
+        },
+        {
+          "path": "scripts/smart_rough_cut.py",
+          "size": 5801,
+          "sha256": null
+        },
+        {
+          "path": "scripts/smart_zoomer.py",
+          "size": 9441,
+          "sha256": null
+        },
+        {
+          "path": "scripts/sync_jy_assets.py",
+          "size": 6481,
+          "sha256": null
+        },
+        {
+          "path": "scripts/universal_tts.py",
+          "size": 7678,
+          "sha256": null
+        },
+        {
+          "path": "scripts/utils/cli_protocol.py",
+          "size": 427,
+          "sha256": null
+        },
+        {
+          "path": "scripts/utils/config.py",
+          "size": 551,
+          "sha256": null
+        },
+        {
+          "path": "scripts/utils/constants.py",
+          "size": 1269,
+          "sha256": null
+        },
+        {
+          "path": "scripts/utils/env_setup.py",
+          "size": 1335,
+          "sha256": null
+        },
+        {
+          "path": "scripts/utils/errors.py",
+          "size": 301,
+          "sha256": null
+        },
+        {
+          "path": "scripts/utils/formatters.py",
+          "size": 8585,
+          "sha256": null
+        },
+        {
+          "path": "scripts/utils/logging_utils.py",
+          "size": 731,
+          "sha256": null
+        },
+        {
+          "path": "scripts/utils/media_normalizer.py",
+          "size": 2082,
+          "sha256": null
+        },
+        {
+          "path": "scripts/utils/skill_path.py",
+          "size": 2198,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/README.md",
+          "size": 373,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/__init__.py",
+          "size": 9706,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/animation.py",
+          "size": 5231,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/assets/__init__.py",
+          "size": 1251,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/assets/draft_info_template.json",
+          "size": 3628,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/assets/draft_meta_info.json",
+          "size": 1374,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/assets/draft_settings_template",
+          "size": 90,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/assets/key_value_template.json",
+          "size": 3,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/audio_segment.py",
+          "size": 8742,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/draft_folder.py",
+          "size": 6435,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/effect_segment.py",
+          "size": 1262,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/exceptions.py",
+          "size": 679,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/jianying_controller.py",
+          "size": 10137,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/keyframe.py",
+          "size": 6061,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/local_materials.py",
+          "size": 9343,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/metadata/__init__.py",
+          "size": 1356,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/metadata/audio_scene_effect.py",
+          "size": 24850,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/metadata/effect_meta.py",
+          "size": 5600,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/metadata/filter_meta.py",
+          "size": 217908,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/metadata/font_meta.py",
+          "size": 111970,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/metadata/mask_meta.py",
+          "size": 922,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/metadata/speech_to_song.py",
+          "size": 960,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/metadata/text_intro.py",
+          "size": 20977,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/metadata/text_loop.py",
+          "size": 13346,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/metadata/text_outro.py",
+          "size": 14046,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/metadata/tone_effect.py",
+          "size": 9185,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/metadata/transition_meta.py",
+          "size": 78223,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/metadata/video_character_effect.py",
+          "size": 130817,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/metadata/video_group_animation.py",
+          "size": 17759,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/metadata/video_intro.py",
+          "size": 22397,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/metadata/video_outro.py",
+          "size": 17955,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/script_file.py",
+          "size": 42371,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/segment.py",
+          "size": 11607,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/template_mode.py",
+          "size": 8402,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/text_segment.py",
+          "size": 21465,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/time_util.py",
+          "size": 3127,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/track.py",
+          "size": 4543,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/util.py",
+          "size": 2118,
+          "sha256": null
+        },
+        {
+          "path": "scripts/vendor/pyJianYingDraft/video_segment.py",
+          "size": 23155,
+          "sha256": null
+        },
+        {
+          "path": "scripts/web_recorder.py",
+          "size": 4005,
+          "sha256": null
+        },
+        {
+          "path": "tools/check_repo_hygiene.py",
+          "size": 944,
+          "sha256": null
+        },
+        {
+          "path": "tools/recording/recorder.py",
+          "size": 15869,
+          "sha256": null
+        },
+        {
+          "path": "tools/recording/recorder_config.json",
+          "size": 34,
+          "sha256": null
+        },
+        {
+          "path": "tools/validate_data_schema.py",
+          "size": 2443,
+          "sha256": null
+        },
+        {
+          "path": "usage.md",
+          "size": 5437,
+          "sha256": null
+        }
+      ],
       "bytes": 3014539
     },
     {
@@ -518,6 +3710,83 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/07-media-content/ppt-nano",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "README.md",
+          "size": 4067,
+          "sha256": null
+        },
+        {
+          "path": "SKILL.md",
+          "size": 6908,
+          "sha256": "b10a14c14af1fb5d9f1c0bcc58f6acc3d03c5830a4f5a2c2e2bc9e10c1069b0f"
+        },
+        {
+          "path": "scripts/build_pptx.py",
+          "size": 4371,
+          "sha256": null
+        },
+        {
+          "path": "scripts/generate_image.py",
+          "size": 11059,
+          "sha256": null
+        },
+        {
+          "path": "scripts/test_generate_image.py",
+          "size": 4972,
+          "sha256": null
+        },
+        {
+          "path": "styles/styles.json",
+          "size": 10612,
+          "sha256": null
+        },
+        {
+          "path": "styles/whiteboard/pages/chart.jpg",
+          "size": 231764,
+          "sha256": null
+        },
+        {
+          "path": "styles/whiteboard/pages/closing.jpg",
+          "size": 256404,
+          "sha256": null
+        },
+        {
+          "path": "styles/whiteboard/pages/content.jpg",
+          "size": 256404,
+          "sha256": null
+        },
+        {
+          "path": "styles/whiteboard/pages/content_new.png",
+          "size": 389299,
+          "sha256": null
+        },
+        {
+          "path": "styles/whiteboard/pages/cover.jpg",
+          "size": 231380,
+          "sha256": null
+        },
+        {
+          "path": "styles/whiteboard/pages/nav1.jpg",
+          "size": 92389,
+          "sha256": null
+        },
+        {
+          "path": "styles/whiteboard/pages/nav2.jpg",
+          "size": 94708,
+          "sha256": null
+        },
+        {
+          "path": "styles/whiteboard/pages/navigation.jpg",
+          "size": 214460,
+          "sha256": null
+        },
+        {
+          "path": "styles/whiteboard/pages/text.jpg",
+          "size": 256404,
+          "sha256": null
+        }
+      ],
       "bytes": 2065201
     },
     {
@@ -529,6 +3798,168 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/07-media-content/remotion-video-creation",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 3538,
+          "sha256": "94b0e5591d26670c3c3a98b993140354296918b1f103dc489e0dbb413fb6803a"
+        },
+        {
+          "path": "rules/3d.md",
+          "size": 2279,
+          "sha256": null
+        },
+        {
+          "path": "rules/animations.md",
+          "size": 784,
+          "sha256": null
+        },
+        {
+          "path": "rules/assets.md",
+          "size": 1590,
+          "sha256": null
+        },
+        {
+          "path": "rules/assets/charts-bar-chart.tsx",
+          "size": 3429,
+          "sha256": null
+        },
+        {
+          "path": "rules/assets/text-animations-typewriter.tsx",
+          "size": 2183,
+          "sha256": null
+        },
+        {
+          "path": "rules/assets/text-animations-word-highlight.tsx",
+          "size": 2387,
+          "sha256": null
+        },
+        {
+          "path": "rules/audio.md",
+          "size": 3822,
+          "sha256": null
+        },
+        {
+          "path": "rules/calculate-metadata.md",
+          "size": 2920,
+          "sha256": null
+        },
+        {
+          "path": "rules/can-decode.md",
+          "size": 1587,
+          "sha256": null
+        },
+        {
+          "path": "rules/charts.md",
+          "size": 1747,
+          "sha256": null
+        },
+        {
+          "path": "rules/compositions.md",
+          "size": 3442,
+          "sha256": null
+        },
+        {
+          "path": "rules/display-captions.md",
+          "size": 3698,
+          "sha256": null
+        },
+        {
+          "path": "rules/extract-frames.md",
+          "size": 5496,
+          "sha256": null
+        },
+        {
+          "path": "rules/fonts.md",
+          "size": 3484,
+          "sha256": null
+        },
+        {
+          "path": "rules/get-audio-duration.md",
+          "size": 1354,
+          "sha256": null
+        },
+        {
+          "path": "rules/get-video-dimensions.md",
+          "size": 1627,
+          "sha256": null
+        },
+        {
+          "path": "rules/get-video-duration.md",
+          "size": 1341,
+          "sha256": null
+        },
+        {
+          "path": "rules/gifs.md",
+          "size": 3868,
+          "sha256": null
+        },
+        {
+          "path": "rules/images.md",
+          "size": 2783,
+          "sha256": null
+        },
+        {
+          "path": "rules/import-srt-captions.md",
+          "size": 2113,
+          "sha256": null
+        },
+        {
+          "path": "rules/lottie.md",
+          "size": 1776,
+          "sha256": null
+        },
+        {
+          "path": "rules/measuring-dom-nodes.md",
+          "size": 973,
+          "sha256": null
+        },
+        {
+          "path": "rules/measuring-text.md",
+          "size": 3000,
+          "sha256": null
+        },
+        {
+          "path": "rules/sequencing.md",
+          "size": 2385,
+          "sha256": null
+        },
+        {
+          "path": "rules/tailwind.md",
+          "size": 423,
+          "sha256": null
+        },
+        {
+          "path": "rules/text-animations.md",
+          "size": 700,
+          "sha256": null
+        },
+        {
+          "path": "rules/timing.md",
+          "size": 3927,
+          "sha256": null
+        },
+        {
+          "path": "rules/transcribe-captions.md",
+          "size": 856,
+          "sha256": null
+        },
+        {
+          "path": "rules/transitions.md",
+          "size": 3726,
+          "sha256": null
+        },
+        {
+          "path": "rules/trimming.md",
+          "size": 1209,
+          "sha256": null
+        },
+        {
+          "path": "rules/videos.md",
+          "size": 3507,
+          "sha256": null
+        }
+      ],
       "bytes": 77954
     },
     {
@@ -540,6 +3971,38 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/07-media-content/wechat-article",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 9564,
+          "sha256": "8004330f5a198503b80fde2cb6d10f64cc99bc9c0acb3b6511f2150a0cb3e737"
+        },
+        {
+          "path": "output/covers/cover_20260303_110844.jpg",
+          "size": 86951,
+          "sha256": null
+        },
+        {
+          "path": "output/covers/cover_20260303_110854.jpg",
+          "size": 86312,
+          "sha256": null
+        },
+        {
+          "path": "scripts/generate_cover.py",
+          "size": 7018,
+          "sha256": null
+        },
+        {
+          "path": "scripts/polish_text.py",
+          "size": 5985,
+          "sha256": null
+        },
+        {
+          "path": "scripts/start_article.py",
+          "size": 2372,
+          "sha256": null
+        }
+      ],
       "bytes": 198202
     },
     {
@@ -551,6 +4014,123 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/07-media-content/yq-editorial-presentation-html",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "README.md",
+          "size": 4944,
+          "sha256": null
+        },
+        {
+          "path": "README_zh.md",
+          "size": 5451,
+          "sha256": null
+        },
+        {
+          "path": "SKILL.md",
+          "size": 20732,
+          "sha256": "7f1bea91f4802e6243ea8213f41397f1d3eeae57e37e7e7784d133c6453ce2dc"
+        },
+        {
+          "path": "assets/deck-shell.html",
+          "size": 5856,
+          "sha256": null
+        },
+        {
+          "path": "assets/embed_pptx_fonts.ps1",
+          "size": 4061,
+          "sha256": null
+        },
+        {
+          "path": "assets/generate_pptx.py",
+          "size": 74891,
+          "sha256": null
+        },
+        {
+          "path": "assets/plan_deck.py",
+          "size": 11325,
+          "sha256": null
+        },
+        {
+          "path": "assets/render_manifest.py",
+          "size": 21679,
+          "sha256": null
+        },
+        {
+          "path": "assets/starter-template.html",
+          "size": 24400,
+          "sha256": null
+        },
+        {
+          "path": "references/chart-selection.md",
+          "size": 4695,
+          "sha256": null
+        },
+        {
+          "path": "references/checklist.md",
+          "size": 3040,
+          "sha256": null
+        },
+        {
+          "path": "references/components.md",
+          "size": 29601,
+          "sha256": null
+        },
+        {
+          "path": "references/design-tokens.md",
+          "size": 8314,
+          "sha256": null
+        },
+        {
+          "path": "references/layouts.md",
+          "size": 6153,
+          "sha256": null
+        },
+        {
+          "path": "references/pptx-mode.md",
+          "size": 15477,
+          "sha256": null
+        },
+        {
+          "path": "references/qa.md",
+          "size": 3652,
+          "sha256": null
+        },
+        {
+          "path": "references/rewrite-existing-html.md",
+          "size": 5677,
+          "sha256": null
+        },
+        {
+          "path": "references/style-index.json",
+          "size": 5287,
+          "sha256": null
+        },
+        {
+          "path": "references/typography.md",
+          "size": 10904,
+          "sha256": null
+        },
+        {
+          "path": "references/visual-grammar.md",
+          "size": 6769,
+          "sha256": null
+        },
+        {
+          "path": "screenshots/01_hero.png",
+          "size": 359924,
+          "sha256": null
+        },
+        {
+          "path": "screenshots/03_evidence_pyramid.png",
+          "size": 242357,
+          "sha256": null
+        },
+        {
+          "path": "screenshots/04_architecture.png",
+          "size": 170779,
+          "sha256": null
+        }
+      ],
       "bytes": 1045968
     },
     {
@@ -562,6 +4142,13 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/08-writing-marketing/decision-tree-with-lp-embedding",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 17336,
+          "sha256": "1ce1bb719f998e3da4daad9fd880e99d8ce812f9123e4692a63230f262774b5f"
+        }
+      ],
       "bytes": 17336
     },
     {
@@ -573,6 +4160,28 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/08-writing-marketing/github-repo-seo-standard",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 10612,
+          "sha256": "745d58a578456b00b701df4bcce297dbb14b39e8c7dc3485302335f22c8f7516"
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 326,
+          "sha256": null
+        },
+        {
+          "path": "references/repo-seo-standard.md",
+          "size": 8408,
+          "sha256": null
+        },
+        {
+          "path": "scripts/run_seo_tracking.py",
+          "size": 11974,
+          "sha256": null
+        }
+      ],
       "bytes": 31320
     },
     {
@@ -584,6 +4193,23 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/08-writing-marketing/github-seo-evaluation-loop",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 11610,
+          "sha256": "1a2e118b0f22aee5e66855682d9dd646f140e3373212ac05788259e593845ee6"
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 252,
+          "sha256": null
+        },
+        {
+          "path": "references/evaluation-playbook.md",
+          "size": 17232,
+          "sha256": null
+        }
+      ],
       "bytes": 29094
     },
     {
@@ -595,6 +4221,48 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/08-writing-marketing/yq-article-style-imitation",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 16937,
+          "sha256": "bccc33ab5a6f964dd4b66c4930d83abc6fa3b2bea2e92b2a5c0e2ae171c59eea"
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 382,
+          "sha256": null
+        },
+        {
+          "path": "references/platform-adaptation.md",
+          "size": 2165,
+          "sha256": null
+        },
+        {
+          "path": "references/platform-patterns.md",
+          "size": 5404,
+          "sha256": null
+        },
+        {
+          "path": "references/style-workflow.md",
+          "size": 10633,
+          "sha256": null
+        },
+        {
+          "path": "scripts/lint_article_style.py",
+          "size": 2205,
+          "sha256": null
+        },
+        {
+          "path": "scripts/review_style_run.py",
+          "size": 3702,
+          "sha256": null
+        },
+        {
+          "path": "scripts/validate_style_run.py",
+          "size": 10069,
+          "sha256": null
+        }
+      ],
       "bytes": 51497
     },
     {
@@ -606,6 +4274,53 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/citation-anchor-resolver",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 7785,
+          "sha256": "732bbfb7527a8253f617719ebe3660044ffb98d39679577adadcffcef5610bf6"
+        },
+        {
+          "path": "references/anchor-schema.md",
+          "size": 3174,
+          "sha256": null
+        },
+        {
+          "path": "references/failure-modes.md",
+          "size": 3812,
+          "sha256": null
+        },
+        {
+          "path": "references/source-types.md",
+          "size": 3203,
+          "sha256": null
+        },
+        {
+          "path": "scripts/__init__.py",
+          "size": 1027,
+          "sha256": null
+        },
+        {
+          "path": "scripts/_anchor_schema.py",
+          "size": 3266,
+          "sha256": null
+        },
+        {
+          "path": "scripts/_keyword_match.py",
+          "size": 7821,
+          "sha256": null
+        },
+        {
+          "path": "scripts/_source_loader.py",
+          "size": 9972,
+          "sha256": null
+        },
+        {
+          "path": "scripts/resolver.py",
+          "size": 7572,
+          "sha256": null
+        }
+      ],
       "bytes": 47632
     },
     {
@@ -617,6 +4332,23 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/cite-bound-content-generator",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 3442,
+          "sha256": "cde16cdb0f2dae8d08722c3751d06fcd07264297348db9483d3d975448cb4951"
+        },
+        {
+          "path": "references/ifi-section-template.md",
+          "size": 3855,
+          "sha256": null
+        },
+        {
+          "path": "scripts/composer.py",
+          "size": 9699,
+          "sha256": null
+        }
+      ],
       "bytes": 16996
     },
     {
@@ -628,6 +4360,18 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/content-verification-layer",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 1105,
+          "sha256": "d57952eeff4368af7457c13a8f9fd7c8a879074d1af992b5a27dcd4e2b65bb79"
+        },
+        {
+          "path": "scripts/verifier.py",
+          "size": 26064,
+          "sha256": null
+        }
+      ],
       "bytes": 27169
     },
     {
@@ -639,6 +4383,18 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/contract-elicitor",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 1055,
+          "sha256": "a454a2e2a0b035c4930261985437cee37b906984ed41f521a486a8862f9fd4e7"
+        },
+        {
+          "path": "scripts/elicitor.py",
+          "size": 6284,
+          "sha256": null
+        }
+      ],
       "bytes": 7339
     },
     {
@@ -650,6 +4406,143 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/contract-review",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "size": 11357,
+          "sha256": null
+        },
+        {
+          "path": "SKILL.md",
+          "size": 5363,
+          "sha256": "f7639c1f845ed502a95420bc07e37ba38501e923107e3ee6803ea24e0035eef6"
+        },
+        {
+          "path": "references/checklist.md",
+          "size": 5420,
+          "sha256": null
+        },
+        {
+          "path": "references/examples.md",
+          "size": 5621,
+          "sha256": null
+        },
+        {
+          "path": "references/flowchart.md",
+          "size": 1822,
+          "sha256": null
+        },
+        {
+          "path": "references/language.md",
+          "size": 2017,
+          "sha256": null
+        },
+        {
+          "path": "references/opinion.md",
+          "size": 1375,
+          "sha256": null
+        },
+        {
+          "path": "references/summary.md",
+          "size": 2912,
+          "sha256": null
+        },
+        {
+          "path": "references/technical.md",
+          "size": 2716,
+          "sha256": null
+        },
+        {
+          "path": "scripts/__init__.py",
+          "size": 50,
+          "sha256": null
+        },
+        {
+          "path": "scripts/contract_analyzer.py",
+          "size": 9418,
+          "sha256": null
+        },
+        {
+          "path": "scripts/document.py",
+          "size": 11550,
+          "sha256": null
+        },
+        {
+          "path": "scripts/error_handling.py",
+          "size": 16670,
+          "sha256": null
+        },
+        {
+          "path": "scripts/mermaid_renderer.py",
+          "size": 7086,
+          "sha256": null
+        },
+        {
+          "path": "scripts/ooxml/__init__.py",
+          "size": 189,
+          "sha256": null
+        },
+        {
+          "path": "scripts/ooxml/pack.py",
+          "size": 3544,
+          "sha256": null
+        },
+        {
+          "path": "scripts/ooxml/unpack.py",
+          "size": 1100,
+          "sha256": null
+        },
+        {
+          "path": "scripts/ooxml/validate.py",
+          "size": 1734,
+          "sha256": null
+        },
+        {
+          "path": "scripts/ooxml/validation/__init__.py",
+          "size": 433,
+          "sha256": null
+        },
+        {
+          "path": "scripts/ooxml/validation/base.py",
+          "size": 1497,
+          "sha256": null
+        },
+        {
+          "path": "scripts/ooxml/validation/docx.py",
+          "size": 311,
+          "sha256": null
+        },
+        {
+          "path": "scripts/ooxml/validation/pptx.py",
+          "size": 274,
+          "sha256": null
+        },
+        {
+          "path": "scripts/ooxml/validation/redlining.py",
+          "size": 217,
+          "sha256": null
+        },
+        {
+          "path": "scripts/opinion_renderer.py",
+          "size": 4280,
+          "sha256": null
+        },
+        {
+          "path": "scripts/summary_renderer.py",
+          "size": 9350,
+          "sha256": null
+        },
+        {
+          "path": "scripts/utilities.py",
+          "size": 3132,
+          "sha256": null
+        },
+        {
+          "path": "scripts/workflow.py",
+          "size": 60585,
+          "sha256": null
+        }
+      ],
       "bytes": 170023
     },
     {
@@ -661,6 +4554,23 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/creating-financial-models",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 5233,
+          "sha256": "ea22f79c3e2d922473f3c24ca7bf467c7e4eb5c0a255fdea0f9d6291148b7aac"
+        },
+        {
+          "path": "scripts/dcf_model.py",
+          "size": 17213,
+          "sha256": null
+        },
+        {
+          "path": "scripts/sensitivity_analysis.py",
+          "size": 11543,
+          "sha256": null
+        }
+      ],
       "bytes": 33989
     },
     {
@@ -672,6 +4582,18 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/design-system-injector",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 917,
+          "sha256": "359d970e2fbc93f5719442895f038d83e98320a0363435dde11b2132af458bd1"
+        },
+        {
+          "path": "scripts/injector.py",
+          "size": 3584,
+          "sha256": null
+        }
+      ],
       "bytes": 4501
     },
     {
@@ -683,6 +4605,13 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/disease-market-sizing-html-template",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 25028,
+          "sha256": "30d113e3cc5177c44bac407b8eded1459a0ecd8ad8fd9fb27a7a5992f755c503"
+        }
+      ],
       "bytes": 25028
     },
     {
@@ -694,6 +4623,28 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/disease-market-sizing-orchestration",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 1024,
+          "sha256": "9a10d405f07198b62a42c5c6f2647442652612dc052fe3ad89f2aa60363224d9"
+        },
+        {
+          "path": "scripts/_mermaid_helper.py",
+          "size": 3030,
+          "sha256": null
+        },
+        {
+          "path": "scripts/_resume_helper.py",
+          "size": 4546,
+          "sha256": null
+        },
+        {
+          "path": "scripts/orchestrator.py",
+          "size": 9877,
+          "sha256": null
+        }
+      ],
       "bytes": 18477
     },
     {
@@ -705,6 +4656,18 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/disease-stratifier",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 1056,
+          "sha256": "014b9005f013f4f93c7856713fd75a2033177ad3038dd8dd7f2bf47a81b82691"
+        },
+        {
+          "path": "scripts/stratifier.py",
+          "size": 4401,
+          "sha256": null
+        }
+      ],
       "bytes": 5457
     },
     {
@@ -716,6 +4679,48 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/drug-citation-verifier",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 6094,
+          "sha256": "d8a6e9889f47eb6e4c680ac5df94b864769bfa1abe63809f5495b3027bef88a5"
+        },
+        {
+          "path": "references/extraction-heuristics.md",
+          "size": 3849,
+          "sha256": null
+        },
+        {
+          "path": "references/failure-modes.md",
+          "size": 3991,
+          "sha256": null
+        },
+        {
+          "path": "references/verification-flow.md",
+          "size": 7167,
+          "sha256": null
+        },
+        {
+          "path": "scripts/__init__.py",
+          "size": 284,
+          "sha256": null
+        },
+        {
+          "path": "scripts/_citation_match.py",
+          "size": 2982,
+          "sha256": null
+        },
+        {
+          "path": "scripts/_drug_extract.py",
+          "size": 8876,
+          "sha256": null
+        },
+        {
+          "path": "scripts/verifier.py",
+          "size": 6785,
+          "sha256": null
+        }
+      ],
       "bytes": 40028
     },
     {
@@ -727,6 +4732,13 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/healthcare-cdss-patterns",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 9332,
+          "sha256": "39ce80ba8c71bfb8068f2dfee7fc536b3140b665c1141a680046de209998f9e0"
+        }
+      ],
       "bytes": 9332
     },
     {
@@ -738,6 +4750,13 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/healthcare-emr-patterns",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 6625,
+          "sha256": "d620a17804bf94a9f42767a5759b36f1d63401bcdac8f2564b07b3ad3dcf5754"
+        }
+      ],
       "bytes": 6625
     },
     {
@@ -749,6 +4768,13 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/healthcare-eval-harness",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 7719,
+          "sha256": "e6a44cdd7df7ac8fea76090bd7b4cb241aecdd4c6039575c0d525bcd85a4313d"
+        }
+      ],
       "bytes": 7719
     },
     {
@@ -760,6 +4786,13 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/healthcare-phi-compliance",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 5573,
+          "sha256": "8e341c0cc2e62c27db772818455f4f30a4a60dafe18897ceb3c26fd9c556ed2e"
+        }
+      ],
       "bytes": 5573
     },
     {
@@ -771,6 +4804,38 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/ifi-market-sizing-skill",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 37283,
+          "sha256": "12aaa5a9ddb4b3bcce6e8585c270578b78f7ff100d86dee0d23c4c94744be5ec"
+        },
+        {
+          "path": "references/data-acquisition.md",
+          "size": 6635,
+          "sha256": null
+        },
+        {
+          "path": "references/flowchart-rules.md",
+          "size": 10989,
+          "sha256": null
+        },
+        {
+          "path": "references/iteration-log.md",
+          "size": 5739,
+          "sha256": null
+        },
+        {
+          "path": "references/nmpa-antifungal-table.md",
+          "size": 6571,
+          "sha256": null
+        },
+        {
+          "path": "references/quality-checklist.md",
+          "size": 4016,
+          "sha256": null
+        }
+      ],
       "bytes": 71233
     },
     {
@@ -782,6 +4847,18 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/session-resume",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 1248,
+          "sha256": "cccf7abf04f43c65975da3b498ccddeb559a786a86e68cb52890ab2d09ea6dd0"
+        },
+        {
+          "path": "scripts/resume.py",
+          "size": 4211,
+          "sha256": null
+        }
+      ],
       "bytes": 5459
     },
     {
@@ -793,6 +4870,43 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/xhs-pharma-social-listening",
       "license": "see upstream",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 11267,
+          "sha256": "ca0fd213a7af7651b3039cbad72952a01a71e33d068705ec1ab724807d45d663"
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 303,
+          "sha256": null
+        },
+        {
+          "path": "references/batch-collection.md",
+          "size": 8564,
+          "sha256": null
+        },
+        {
+          "path": "references/methodology.md",
+          "size": 1278,
+          "sha256": null
+        },
+        {
+          "path": "references/query-matrix.md",
+          "size": 3024,
+          "sha256": null
+        },
+        {
+          "path": "scripts/analyze_xhs_pharma.py",
+          "size": 25494,
+          "sha256": null
+        },
+        {
+          "path": "scripts/collect_xhs_pharma.py",
+          "size": 22445,
+          "sha256": null
+        }
+      ],
       "bytes": 72375
     }
   ],
@@ -819,17 +4933,17 @@
     },
     {
       "source": "anthropics/skills",
+      "path": "skills/claude-api/shared/evals/report/SCHEMA.md",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "anthropics/skills",
       "path": "skills/claude-api/shared/evals/report/build-report-lite.mjs",
       "reason": "nested test/fixture path"
     },
     {
       "source": "anthropics/skills",
       "path": "skills/claude-api/shared/evals/report/runner-scaffold.mjs",
-      "reason": "nested test/fixture path"
-    },
-    {
-      "source": "anthropics/skills",
-      "path": "skills/claude-api/shared/evals/report/SCHEMA.md",
       "reason": "nested test/fixture path"
     },
     {
@@ -855,7 +4969,7 @@
     {
       "source": "anthropics/skills",
       "path": "skills/web-artifacts-builder/scripts/shadcn-components.tar.gz",
-      "reason": "binary extension"
+      "reason": "binary extension dropped"
     },
     {
       "source": "anthropics/skills",
@@ -965,7 +5079,7 @@
     {
       "source": "LeastBit/Anthropics_skills_zh-CN",
       "path": "skills/web-artifacts-builder/scripts/shadcn-components.tar.gz",
-      "reason": "binary extension"
+      "reason": "binary extension dropped"
     },
     {
       "source": "anthropics/skills",
@@ -1024,18 +5138,18 @@
     },
     {
       "source": "lubiny0601-spec/Skill-hub",
-      "path": "skills/01-agent-engineering/project-cleanup-audit/evals/files/ignored-paths/test_dataset/user.csv",
-      "reason": "nested test/fixture path"
-    },
-    {
-      "source": "lubiny0601-spec/Skill-hub",
       "path": "skills/01-agent-engineering/project-cleanup-audit/evals/files/ignored-paths/__pycache__/cache.txt",
       "reason": "nested test/fixture path"
     },
     {
       "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/01-agent-engineering/project-cleanup-audit/evals/files/ignored-paths/test_dataset/user.csv",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
       "path": "skills/01-agent-engineering/skill-creator",
-      "reason": "duplicate name \"skill-creator\" already provided by LeastBit/Anthropics_skills_zh-CN"
+      "reason": "duplicate skill name \"skill-creator\" already provided by LeastBit/Anthropics_skills_zh-CN"
     },
     {
       "source": "lubiny0601-spec/Skill-hub",
@@ -1060,7 +5174,7 @@
     {
       "source": "lubiny0601-spec/Skill-hub",
       "path": "skills/03-frameworks/frontend-design",
-      "reason": "duplicate name \"frontend-design\" already provided by LeastBit/Anthropics_skills_zh-CN"
+      "reason": "duplicate skill name \"frontend-design\" already provided by LeastBit/Anthropics_skills_zh-CN"
     },
     {
       "source": "lubiny0601-spec/Skill-hub",
@@ -1070,7 +5184,7 @@
     {
       "source": "lubiny0601-spec/Skill-hub",
       "path": "skills/03-frameworks/netlify-cli/docs/full-guide.pdf",
-      "reason": "asset > 512KiB"
+      "reason": "asset > 512KiB dropped"
     },
     {
       "source": "lubiny0601-spec/Skill-hub",
@@ -1080,11 +5194,21 @@
     {
       "source": "lubiny0601-spec/Skill-hub",
       "path": "skills/07-media-content/docx",
-      "reason": "duplicate name \"docx\" already provided by LeastBit/Anthropics_skills_zh-CN"
+      "reason": "duplicate skill name \"docx\" already provided by LeastBit/Anthropics_skills_zh-CN"
     },
     {
       "source": "lubiny0601-spec/Skill-hub",
       "path": "skills/07-media-content/github-readme-visuals/evals/evals.json",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/github-readme-visuals/evals/files/readme-fixture/README.md",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/github-readme-visuals/evals/files/readme-fixture/README_zh.md",
       "reason": "nested test/fixture path"
     },
     {
@@ -1104,33 +5228,23 @@
     },
     {
       "source": "lubiny0601-spec/Skill-hub",
-      "path": "skills/07-media-content/github-readme-visuals/evals/files/readme-fixture/README.md",
-      "reason": "nested test/fixture path"
-    },
-    {
-      "source": "lubiny0601-spec/Skill-hub",
-      "path": "skills/07-media-content/github-readme-visuals/evals/files/readme-fixture/README_zh.md",
-      "reason": "nested test/fixture path"
+      "path": "skills/07-media-content/html-design-polish/CHANGELOG.md",
+      "reason": "vendored repo housekeeping"
     },
     {
       "source": "lubiny0601-spec/Skill-hub",
       "path": "skills/07-media-content/html-design-polish/assets/clovernas-navigation-reference.png",
-      "reason": "asset > 512KiB"
+      "reason": "asset > 512KiB dropped"
     },
     {
       "source": "lubiny0601-spec/Skill-hub",
       "path": "skills/07-media-content/html-design-polish/assets/innovation-navigation-reference.png",
-      "reason": "asset > 512KiB"
+      "reason": "asset > 512KiB dropped"
     },
     {
       "source": "lubiny0601-spec/Skill-hub",
       "path": "skills/07-media-content/html-design-polish/assets/xacduro-navigation-reference.png",
-      "reason": "asset > 512KiB"
-    },
-    {
-      "source": "lubiny0601-spec/Skill-hub",
-      "path": "skills/07-media-content/html-design-polish/CHANGELOG.md",
-      "reason": "vendored repo housekeeping"
+      "reason": "asset > 512KiB dropped"
     },
     {
       "source": "lubiny0601-spec/Skill-hub",
@@ -1164,16 +5278,6 @@
     },
     {
       "source": "lubiny0601-spec/Skill-hub",
-      "path": "skills/07-media-content/jianying-editor/assets/cover.png",
-      "reason": "asset > 512KiB"
-    },
-    {
-      "source": "lubiny0601-spec/Skill-hub",
-      "path": "skills/07-media-content/jianying-editor/assets/video.mp4",
-      "reason": "asset > 512KiB"
-    },
-    {
-      "source": "lubiny0601-spec/Skill-hub",
       "path": "skills/07-media-content/jianying-editor/CHANGELOG.md",
       "reason": "vendored repo housekeeping"
     },
@@ -1181,6 +5285,31 @@
       "source": "lubiny0601-spec/Skill-hub",
       "path": "skills/07-media-content/jianying-editor/CONTRIBUTING.md",
       "reason": "vendored repo housekeeping"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/jianying-editor/LICENSE",
+      "reason": "vendored repo housekeeping"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/jianying-editor/SECURITY.md",
+      "reason": "vendored repo housekeeping"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/jianying-editor/assets/cover.png",
+      "reason": "asset > 512KiB dropped"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/jianying-editor/assets/video.mp4",
+      "reason": "asset > 512KiB dropped"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/jianying-editor/examples/_bootstrap.py",
+      "reason": "nested test/fixture path"
     },
     {
       "source": "lubiny0601-spec/Skill-hub",
@@ -1229,23 +5358,8 @@
     },
     {
       "source": "lubiny0601-spec/Skill-hub",
-      "path": "skills/07-media-content/jianying-editor/examples/_bootstrap.py",
-      "reason": "nested test/fixture path"
-    },
-    {
-      "source": "lubiny0601-spec/Skill-hub",
-      "path": "skills/07-media-content/jianying-editor/LICENSE",
-      "reason": "vendored repo housekeeping"
-    },
-    {
-      "source": "lubiny0601-spec/Skill-hub",
       "path": "skills/07-media-content/jianying-editor/scripts/vendor/pyJianYingDraft/metadata/video_scene_effect.py",
-      "reason": "asset > 512KiB"
-    },
-    {
-      "source": "lubiny0601-spec/Skill-hub",
-      "path": "skills/07-media-content/jianying-editor/SECURITY.md",
-      "reason": "vendored repo housekeeping"
+      "reason": "asset > 512KiB dropped"
     },
     {
       "source": "lubiny0601-spec/Skill-hub",
@@ -1255,7 +5369,7 @@
     {
       "source": "lubiny0601-spec/Skill-hub",
       "path": "skills/07-media-content/pdf",
-      "reason": "duplicate name \"pdf\" already provided by LeastBit/Anthropics_skills_zh-CN"
+      "reason": "duplicate skill name \"pdf\" already provided by LeastBit/Anthropics_skills_zh-CN"
     },
     {
       "source": "lubiny0601-spec/Skill-hub",
@@ -1265,12 +5379,12 @@
     {
       "source": "lubiny0601-spec/Skill-hub",
       "path": "skills/07-media-content/ppt-nano/styles/whiteboard/pages/content_new.jpg",
-      "reason": "asset > 512KiB"
+      "reason": "asset > 512KiB dropped"
     },
     {
       "source": "lubiny0601-spec/Skill-hub",
       "path": "skills/07-media-content/pptx",
-      "reason": "duplicate name \"pptx\" already provided by LeastBit/Anthropics_skills_zh-CN"
+      "reason": "duplicate skill name \"pptx\" already provided by LeastBit/Anthropics_skills_zh-CN"
     },
     {
       "source": "lubiny0601-spec/Skill-hub",
@@ -1280,7 +5394,7 @@
     {
       "source": "lubiny0601-spec/Skill-hub",
       "path": "skills/07-media-content/xlsx",
-      "reason": "duplicate name \"xlsx\" already provided by LeastBit/Anthropics_skills_zh-CN"
+      "reason": "duplicate skill name \"xlsx\" already provided by LeastBit/Anthropics_skills_zh-CN"
     },
     {
       "source": "lubiny0601-spec/Skill-hub",
