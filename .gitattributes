@@ -1,0 +1,19 @@
+# CI runs on ubuntu-latest while development happens on Windows.
+# Force LF for scripts so a CRLF checkout cannot break the shebang/exec path,
+# and keep generated skill payloads byte-identical regardless of who commits them.
+* text=auto eol=lf
+*.mjs text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.md text eol=lf
+
+# Generated skill assets must never be line-ending munged — many skills ship
+# binary media and the panel hashes file contents.
+skills/** -text
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.zip binary

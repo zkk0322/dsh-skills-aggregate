@@ -1,0 +1,55 @@
+{
+  "$comment": "Aggregate skill source manifest. Every entry is a PUBLIC GitHub repo containing SKILL.md files. The build mirrors ONLY the skill directories, drops large/binary assets, and enforces the dsh-skills-manager limits (500 skills / 32MiB whole-repo zip). Files remain the property of their upstream authors — see each license field.",
+  "$ordering": "Sources are processed in array order. The panel REJECTS duplicate skill names, so a later source can only replace an earlier one by listing that skill name in its `overrides` array. Put preferred/localized versions LAST with explicit overrides.",
+  "sources": [
+    {
+      "owner": "anthropics",
+      "name": "skills",
+      "ref": "main",
+      "category": "official",
+      "license": "see upstream (Anthropic Agent Skills)",
+      "priority": 10,
+      "include": ["skills"],
+      "exclude": ["template"]
+    },
+    {
+      "owner": "LeastBit",
+      "name": "Anthropics_skills_zh-CN",
+      "ref": "main",
+      "category": "official-zh",
+      "license": "see upstream",
+      "priority": 20,
+      "include": ["skills"],
+      "exclude": ["template"],
+      "$why": "Chinese localization of anthropics/skills. Placed after and given explicit overrides so the zh-CN text wins for Chinese users instead of being shadowed by the English originals.",
+      "overrides": [
+        "algorithmic-art",
+        "brand-guidelines",
+        "canvas-design",
+        "doc-coauthoring",
+        "docx",
+        "frontend-design",
+        "internal-comms",
+        "mcp-builder",
+        "pdf",
+        "pptx",
+        "skill-creator",
+        "slack-gif-creator",
+        "theme-factory",
+        "web-artifacts-builder",
+        "webapp-testing",
+        "xlsx"
+      ]
+    },
+    {
+      "owner": "lubiny0601-spec",
+      "name": "Skill-hub",
+      "ref": "mine",
+      "category": "community-cn",
+      "license": "see upstream",
+      "priority": 5,
+      "include": ["skills"],
+      "$why": "Community hub with Chinese-language skills not covered elsewhere. Lowest priority: never overrides the curated official/zh sets."
+    }
+  ]
+}

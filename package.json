@@ -1,0 +1,21 @@
+{
+  "name": "dsh-skills-aggregate",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Aggregate skill source for the DSH Settings → Skills panel: mirrors curated SKILL.md directories from several public repos into one scannable repository.",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "verify": "node scripts/verify.mjs",
+    "all": "node scripts/build.mjs && node scripts/verify.mjs",
+    "dry": "AGG_OUT=./dist-dry node scripts/build.mjs && node scripts/verify.mjs"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/REPLACE_ME/dsh-skills-aggregate.git"
+  }
+}
