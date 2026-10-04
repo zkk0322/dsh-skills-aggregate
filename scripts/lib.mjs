@@ -25,6 +25,18 @@ export const DROP_EXT =
  *  in the repo, so nested scaffolding collides with real skill names. */
 export const SCAFFOLD_SEG = /(^|\/)(evals?|tests?|__tests__|fixtures?|examples?)(\/|$)/;
 
+/** Repo housekeeping that a vendored project drags along. It carries no skill value
+ *  and inflates the payload against the 32 MiB panel cap (observed: one skill shipped
+ *  a whole .github/ tree, .editorconfig and pre-commit config). */
+export const HOUSEKEEPING_SEG = /(^|\/)(\.github|\.git|\.vscode|\.idea|\.circleci|\.husky)(\/|$)/;
+export const HOUSEKEEPING_FILE =
+  /(^|\/)(\.editorconfig|\.pre-commit-config\.yaml|\.prettierrc.*|\.eslintrc.*|\.gitignore|\.gitattributes|\.npmignore|\.dockerignore|LICENSE|LICENCE|CHANGELOG\.md|CHANGELOG\.zh-CN\.md|CODE_OF_CONDUCT\.md|CONTRIBUTING\.md|SECURITY\.md|package-lock\.json|pnpm-lock\.yaml|yarn\.lock)$/i;
+
+/** True when a path inside a skill directory is vendored project housekeeping. */
+export function isHousekeeping(rel) {
+  return HOUSEKEEPING_SEG.test(rel) || HOUSEKEEPING_FILE.test(rel);
+}
+
 // ── Frontmatter parsing, identical semantics to the panel ────────────────────
 export function parseDoc(text) {
   if (!text.startsWith("---")) return { hasFrontmatter: false, map: {}, body: text };

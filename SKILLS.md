@@ -3,9 +3,9 @@
 Auto-generated catalogue of the skills published by this repository. Do not edit
 by hand — `scripts/build.mjs` rewrites it on every build.
 
-- Generated: `2026-10-04T08:44:26.968Z`
+- Generated: `2026-10-04T08:46:07.825Z`
 - Skills: **72** (panel limit 500)
-- Payload: **17.63 MiB** / 32 MiB panel cap
+- Payload: **17.62 MiB** / 32 MiB panel cap
 
 ## Add it to DSH
 
@@ -113,7 +113,7 @@ Settings → Skills → Skill repositories → Add repository
 
 ## Skipped
 
-99 entries skipped (limits, duplicates, invalid frontmatter). See `index.json`.
+110 entries skipped (limits, duplicates, invalid frontmatter). See `index.json`.
 
 ---
 

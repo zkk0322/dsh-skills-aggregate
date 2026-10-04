@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-04T08:44:26.968Z",
+  "generatedAt": "2026-10-04T08:46:07.825Z",
   "budgetBytes": 27262976,
-  "usedBytes": 18484802,
+  "usedBytes": 18476535,
   "skills": [
     {
       "name": "academy-guide",
@@ -298,7 +298,7 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/03-frameworks/netlify-cli",
       "license": "see upstream",
-      "bytes": 408386
+      "bytes": 407967
     },
     {
       "name": "bioc-fulltext-fetch",
@@ -485,7 +485,7 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/07-media-content/html-design-polish",
       "license": "see upstream",
-      "bytes": 18850
+      "bytes": 18527
     },
     {
       "name": "imagegen",
@@ -507,7 +507,7 @@
       "sourceRef": "mine",
       "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/07-media-content/jianying-editor",
       "license": "see upstream",
-      "bytes": 3022064
+      "bytes": 3014539
     },
     {
       "name": "ppt-nano",
@@ -1064,6 +1064,11 @@
     },
     {
       "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/03-frameworks/netlify-cli/CHANGELOG.md",
+      "reason": "vendored repo housekeeping"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
       "path": "skills/03-frameworks/netlify-cli/docs/full-guide.pdf",
       "reason": "asset > 512KiB"
     },
@@ -1124,8 +1129,38 @@
     },
     {
       "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/html-design-polish/CHANGELOG.md",
+      "reason": "vendored repo housekeeping"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
       "path": "skills/07-media-content/html-design-polish/examples/.gitkeep",
       "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/jianying-editor/.editorconfig",
+      "reason": "vendored repo housekeeping"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/jianying-editor/.github/pull_request_template.md",
+      "reason": "vendored repo housekeeping"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/jianying-editor/.github/workflows/ci.yml",
+      "reason": "vendored repo housekeeping"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/jianying-editor/.gitignore",
+      "reason": "vendored repo housekeeping"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/jianying-editor/.pre-commit-config.yaml",
+      "reason": "vendored repo housekeeping"
     },
     {
       "source": "lubiny0601-spec/Skill-hub",
@@ -1136,6 +1171,16 @@
       "source": "lubiny0601-spec/Skill-hub",
       "path": "skills/07-media-content/jianying-editor/assets/video.mp4",
       "reason": "asset > 512KiB"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/jianying-editor/CHANGELOG.md",
+      "reason": "vendored repo housekeeping"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/jianying-editor/CONTRIBUTING.md",
+      "reason": "vendored repo housekeeping"
     },
     {
       "source": "lubiny0601-spec/Skill-hub",
@@ -1189,8 +1234,18 @@
     },
     {
       "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/jianying-editor/LICENSE",
+      "reason": "vendored repo housekeeping"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
       "path": "skills/07-media-content/jianying-editor/scripts/vendor/pyJianYingDraft/metadata/video_scene_effect.py",
       "reason": "asset > 512KiB"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/jianying-editor/SECURITY.md",
+      "reason": "vendored repo housekeeping"
     },
     {
       "source": "lubiny0601-spec/Skill-hub",

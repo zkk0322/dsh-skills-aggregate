@@ -27,6 +27,7 @@ import {
   PER_FILE_MAX,
   DROP_EXT,
   SCAFFOLD_SEG,
+  isHousekeeping,
   skillValidity,
   cleanOutputs,
   createNameRegistry,
@@ -198,6 +199,12 @@ export async function build({ manifest, outDir, log = console.log }) {
         // SKILL.md files that the panel would scan and collide on.
         if (SCAFFOLD_SEG.test(rel)) {
           index.skipped.push({ source: `${src.owner}/${src.name}`, path: posix.join(item.dir, rel), reason: "nested test/fixture path" });
+          continue;
+        }
+        // Vendored repo housekeeping (.github/, .editorconfig, lockfiles, changelogs)
+        // adds nothing to a skill and eats into the 32 MiB panel budget.
+        if (isHousekeeping(rel)) {
+          index.skipped.push({ source: `${src.owner}/${src.name}`, path: posix.join(item.dir, rel), reason: "vendored repo housekeeping" });
           continue;
         }
         if ((b.size || 0) > PER_FILE_MAX) {

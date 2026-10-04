@@ -19,6 +19,7 @@ import {
   PER_FILE_MAX,
   DROP_EXT,
   SCAFFOLD_SEG,
+  isHousekeeping,
   skillValidity,
   cleanOutputs,
   createNameRegistry,
@@ -183,6 +184,12 @@ for (const src of manifest.sources) {
       // collisions, so anything under a test/fixture segment is never copied.
       if (SCAFFOLD_SEG.test(rel)) {
         index.skipped.push({ source: slug, path: posix.join(dir, rel), reason: "nested test/fixture path" });
+        continue;
+      }
+      // Vendored repo housekeeping (.github/, .editorconfig, lockfiles, changelogs)
+      // adds nothing to a skill and eats into the 32 MiB panel budget.
+      if (isHousekeeping(rel)) {
+        index.skipped.push({ source: slug, path: posix.join(dir, rel), reason: "vendored repo housekeeping" });
         continue;
       }
       if (f.size > PER_FILE_MAX) { index.skipped.push({ source: slug, path: posix.join(dir, rel), reason: "asset > 512KiB" }); continue; }
