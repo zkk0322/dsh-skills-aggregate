@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Repo SEO Standard"
+  short_description: "GitHub 仓库 SEO、外部搜索入口与站点资产评估流程"
+  default_prompt: "Use -repo-seo-standard to audit, plan, or implement GitHub repository SEO with Chinese broad-query measurement, channel fit assessment, and site asset boundaries."

@@ -20,48 +20,21 @@ import { mkdir, rm, writeFile, readFile } from "node:fs/promises";
 import { join, dirname, posix } from "node:path";
 import { fileURLToPath } from "node:url";
 import { createHash } from "node:crypto";
-
-// ── Hard limits mirrored from dsh-skills-manager lib/repositories.js ──────────
-const PANEL_MAX_ZIP = 32 * 1024 * 1024; // LIMIT = 32 << 20
-const PANEL_MAX_SKILLS = 500;
-const PANEL_MAX_SKILL_MD = 256 * 1024;
-const SKILL_NAME_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
-const RESERVED = /^(con|prn|aux|nul|com[1-9]|lpt[1-9])$/i;
+import {
+  PANEL_MAX_ZIP,
+  PANEL_MAX_SKILLS,
+  PANEL_MAX_SKILL_MD,
+  PER_FILE_MAX,
+  DROP_EXT,
+  SCAFFOLD_SEG,
+  skillValidity,
+  cleanOutputs,
+  createNameRegistry,
+  writeCatalogue,
+} from "./lib.mjs";
 
 // We keep the published repo well under the panel cap so every skill dir has room.
 const BUDGET_BYTES = Number(process.env.AGG_BUDGET_BYTES || 26 * 1024 * 1024);
-const PER_FILE_MAX = 512 * 1024; // assets larger than this are dropped
-const DROP_EXT =
-  /\.(zip|tar|gz|tgz|7z|rar|mp4|mov|avi|mkv|webm|exe|dll|so|dylib|bin|onnx|pt|pth|safetensors|gguf|iso|dmg|msi|jar|wasm)$/i;
-
-// ── Frontmatter parsing, identical semantics to the panel ────────────────────
-function parseDoc(text) {
-  if (!text.startsWith("---")) return { hasFrontmatter: false, map: {}, body: text };
-  const end = text.indexOf("\n---", 3);
-  if (end < 0) return { hasFrontmatter: false, map: {}, body: text };
-  const map = {};
-  for (const raw of text.slice(3, end).split(/\r?\n/)) {
-    const m = /^([A-Za-z_][A-Za-z0-9_-]*)\s*:\s*(.*)$/.exec(raw);
-    if (!m) continue;
-    let v = m[2].trim();
-    if ((v.startsWith('"') && v.endsWith('"')) || (v.startsWith("'") && v.endsWith("'"))) v = v.slice(1, -1);
-    map[m[1]] = v;
-  }
-  return { hasFrontmatter: true, map, body: text.slice(end + 4) };
-}
-
-export function skillValidity(text) {
-  const doc = parseDoc(text);
-  const name = String(doc.map.name || "");
-  const description = String(doc.map.description || "");
-  const ok =
-    doc.hasFrontmatter &&
-    SKILL_NAME_RE.test(name) &&
-    !RESERVED.test(name) &&
-    name.length <= 100 &&
-    description.length > 0;
-  return { ok, name, description, doc };
-}
 
 // ── GitHub access (token-aware; CI uses GITHUB_TOKEN) ────────────────────────
 const TOKEN = process.env.GITHUB_TOKEN || process.env.GH_TOKEN || "";
@@ -121,8 +94,9 @@ function discoverSkills(repo, { include = [], exclude = [] } = {}) {
     const dir = f.path === "SKILL.md" ? "" : f.path.slice(0, -"/SKILL.md".length);
     if (include.length && !include.some((p) => dir === p || dir.startsWith(p + "/"))) continue;
     if (exclude.some((p) => dir === p || dir.startsWith(p + "/"))) continue;
-    // skip eval/fixture trees that are not real installable skills
-    if (/(^|\/)(evals?|tests?|__tests__|fixtures?|examples?\/files)\//.test(dir + "/")) continue;
+    // skip eval/fixture trees that are not real installable skills; the panel scans
+    // every SKILL.md in the repo, so these would both pollute and collide on names.
+    if (SCAFFOLD_SEG.test(dir)) continue;
     dirs.push({ dir, sha: f.sha, size: f.size || 0 });
   }
   return dirs;
@@ -142,11 +116,12 @@ function filesForSkill(repo, dir) {
 
 // ── Main build ──────────────────────────────────────────────────────────────
 export async function build({ manifest, outDir, log = console.log }) {
-  await rm(outDir, { recursive: true, force: true });
-  await mkdir(join(outDir, "skills"), { recursive: true });
+  // outDir is the repository root by default, so only the generated outputs are
+  // cleaned — a blanket rm -rf would delete .git and every source file.
+  await cleanOutputs(rm, join, mkdir, outDir);
 
   const index = { generatedAt: new Date().toISOString(), budgetBytes: BUDGET_BYTES, usedBytes: 0, skills: [], skipped: [] };
-  const usedNames = new Map(); // skill name -> source, panel refuses duplicates
+  const names = createNameRegistry(); // panel refuses duplicate skill names
   let used = 0;
 
   for (const src of manifest.sources) {
@@ -191,7 +166,7 @@ export async function build({ manifest, outDir, log = console.log }) {
       // later source can only replace an earlier one by declaring the name in
       // `overrides`. Without this, the first source permanently shadows every
       // localized or updated variant (observed: 16 zh-CN skills all dropped).
-      const existing = usedNames.get(v.name);
+      const existing = names.get(v.name);
       if (existing && existing.source !== `${src.owner}/${src.name}`) {
         if (!(src.overrides || []).includes(v.name)) {
           index.skipped.push({
@@ -209,6 +184,7 @@ export async function build({ manifest, outDir, log = console.log }) {
           // the panel see two SKILL.md with the same frontmatter name and reject them.
           await rm(join(outDir, ...old.path.split("/")), { recursive: true, force: true });
           index.skills.splice(at, 1);
+          names.delete(v.name);
           index.skipped.push({ source: old.source, path: old.path, reason: `superseded by ${src.owner}/${src.name} (overrides)` });
         }
       }
@@ -220,7 +196,7 @@ export async function build({ manifest, outDir, log = console.log }) {
       for (const [rel, b] of files) {
         // Nested test/fixture scaffolding (e.g. evals/files/**) carries its own
         // SKILL.md files that the panel would scan and collide on.
-        if (/(^|\/)(evals?|tests?|__tests__|fixtures?|examples?)(\/|$)/.test(rel)) {
+        if (SCAFFOLD_SEG.test(rel)) {
           index.skipped.push({ source: `${src.owner}/${src.name}`, path: posix.join(item.dir, rel), reason: "nested test/fixture path" });
           continue;
         }
@@ -257,7 +233,7 @@ export async function build({ manifest, outDir, log = console.log }) {
       }
       used += cost;
       taken++;
-      usedNames.set(v.name, { source: `${src.owner}/${src.name}`, priority: Number(src.priority || 0) });
+      names.set(v.name, `${src.owner}/${src.name}`, Number(src.priority || 0));
       index.skills.push({
         name: v.name,
         category: src.category || "misc",
@@ -275,11 +251,8 @@ export async function build({ manifest, outDir, log = console.log }) {
   }
 
   index.usedBytes = used;
-  await writeFile(join(outDir, "index.json"), JSON.stringify(index, null, 2));
-  await writeFile(
-    join(outDir, "README.md"),
-    renderReadme(index, manifest)
-  );
+  // Shared with build-local.mjs so both paths emit an identical published surface.
+  await writeCatalogue(writeFile, join, outDir, index, manifest);
   log(`\nDONE: ${index.skills.length} skills, ${(used / 1048576).toFixed(2)} MiB / budget ${(BUDGET_BYTES / 1048576).toFixed(2)} MiB`);
   if (used > PANEL_MAX_ZIP) throw new Error("budget exceeds panel hard cap 32MiB!");
   return index;
@@ -289,52 +262,8 @@ function sha256(buf) {
   return buf ? createHash("sha256").update(buf).digest("hex") : null;
 }
 
-function renderReadme(index, manifest) {
-  const byCat = new Map();
-  for (const s of index.skills) {
-    if (!byCat.has(s.category)) byCat.set(s.category, []);
-    byCat.get(s.category).push(s);
-  }
-  const lines = [
-    "# DSH Skills Aggregate",
-    "",
-    `Auto-generated aggregate skill source for the DSH **Settings → Skills** panel`,
-    `(\`@michengai/dsh-skills-manager\`). Add this repository **once** and browse every skill below.`,
-    "",
-    `- Generated: \`${index.generatedAt}\``,
-    `- Skills: **${index.skills.length}** (panel limit 500)`,
-    `- Payload: **${(index.usedBytes / 1048576).toFixed(2)} MiB** / 32 MiB panel cap`,
-    "",
-    "## Add it to DSH",
-    "",
-    "```text",
-    "Settings → Skills → Skill repositories → Add repository",
-    `  <owner>/<repo>        # e.g. your-account/dsh-skills-aggregate`,
-    "```",
-    "",
-    "## Sources",
-    "",
-    "| Upstream | Ref | Category | License |",
-    "| --- | --- | --- | --- |",
-  ];
-  for (const s of manifest.sources) {
-    lines.push(`| [${s.owner}/${s.name}](https://github.com/${s.owner}/${s.name}) | \`${s.ref}\` | ${s.category || "misc"} | ${s.license || "unspecified"} |`);
-  }
-  lines.push("", "## Skills", "");
-  for (const [cat, items] of [...byCat.entries()].sort()) {
-    lines.push(`### ${cat}`, "", "| Skill | Description | Source |", "| --- | --- | --- |");
-    for (const s of items.sort((a, b) => a.name.localeCompare(b.name))) {
-      const desc = (s.description || "").replace(/\|/g, "\\|").replace(/\s+/g, " ").slice(0, 140);
-      lines.push(`| \`${s.name}\` | ${desc} | [${s.source}](${s.sourceUrl}) |`);
-    }
-    lines.push("");
-  }
-  if (index.skipped.length) {
-    lines.push("## Skipped", "", `${index.skipped.length} entries skipped (limits, duplicates, invalid frontmatter). See \`index.json\`.`);
-  }
-  lines.push("", "---", "", "Generated by `scripts/build.mjs`. File contents belong to their upstream authors.");
-  return lines.join("\n");
-}
+// renderReadme / writeCatalogue moved to lib.mjs — build-local.mjs was missing the
+// catalogue entirely, so a locally "verified" tree was not the CI artifact.
 
 // ── CLI ─────────────────────────────────────────────────────────────────────
 const SELF = fileURLToPath(import.meta.url);
@@ -342,10 +271,17 @@ const here = dirname(SELF);
 
 if (process.argv[1] && (SELF === process.argv[1] || process.argv.includes("--build"))) {
   const manifest = JSON.parse(await readFile(join(here, "..", "manifest.json"), "utf8"));
-  const outDir = process.env.AGG_OUT || join(here, "..", "dist");
+  // Default output is the REPOSITORY ROOT, because the panel downloads the whole
+  // repo zip and scans every SKILL.md it contains. Generating into <root>/skills
+  // is what makes the published repo directly addable in one step.
+  // Set AGG_OUT to build into a scratch directory instead.
+  const outDir = process.env.AGG_OUT || join(here, "..");
   const index = await build({ manifest, outDir });
+  // build-summary.json must not land inside the published repo: the panel scans
+  // the whole tree and we keep the published surface to skills/ + index.json + SKILLS.md.
+  const summaryPath = process.env.AGG_SUMMARY || join(here, "..", ".build-summary.json");
   await writeFile(
-    join(dirname(outDir), "build-summary.json"),
+    summaryPath,
     JSON.stringify({ skills: index.skills.length, bytes: index.usedBytes, skipped: index.skipped.length }, null, 2)
   );
 }

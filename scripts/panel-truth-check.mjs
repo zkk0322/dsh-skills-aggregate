@@ -27,24 +27,43 @@ console.log("panel exports:", Object.keys(panel).join(", "));
 const { decodeRepositoryArchive } = panel;
 
 // 2. Zip the generated tree the way codeload would (single top-level dir).
+// codeload serves the COMMITTED tree: it never includes .git, and scratch dirs are
+// gitignored. Zipping the raw working directory would add .git objects and the
+// upstream zip cache, producing a size that no real client would ever see — a
+// meaningless (and misleadingly failing) measurement.
+const EXCLUDE_DIRS = new Set([".git", ".tmp-zips", "dist", "dist-local", "node_modules"]);
+const EXCLUDE_FILES = new Set([".build-summary.json"]);
+
 async function walk(dir, base = dir) {
   const out = [];
   for (const e of await readdir(dir, { withFileTypes: true })) {
+    if (e.isDirectory() && EXCLUDE_DIRS.has(e.name)) continue;
     const p = join(dir, e.name);
     if (e.isDirectory()) out.push(...(await walk(p, base)));
-    else if (e.isFile()) out.push({ abs: p, rel: posix.join(...p.slice(base.length + 1).split(/[\\/]/)) });
+    else if (e.isFile()) {
+      if (base === dir && EXCLUDE_FILES.has(e.name)) continue;
+      out.push({ abs: p, rel: posix.join(...p.slice(base.length + 1).split(/[\\/]/)) });
+    }
   }
   return out;
 }
 
 const files = await walk(root);
 const zipEntries = {};
-// codeload style: repo-branch/ prefix
+// codeload style: repo-branch/ prefix, containing exactly what git tracks.
+const unpublishable = files.filter((f) => f.rel === "SKILL.md" || f.rel.endsWith("/SKILL.md"));
+const stray = unpublishable.filter((f) => !f.rel.startsWith("skills/"));
+if (stray.length) {
+  console.error("FAIL: stray SKILL.md outside skills/ would be scanned as a skill:");
+  for (const s of stray.slice(0, 10)) console.error("  " + s.rel);
+  process.exit(1);
+}
 for (const f of files) {
   zipEntries["aggregate-main/" + f.rel] = new Uint8Array(await readFile(f.abs));
 }
 const zipBytes = zipSync(zipEntries, { level: 6 });
 console.log(`\nzipped tree: ${(zipBytes.length / 1048576).toFixed(2)} MiB (panel cap 32 MiB)`);
+console.log(`  (excluding .git and scratch dirs — this is what codeload would serve)`);
 
 if (zipBytes.length > 32 * 1024 * 1024) {
   console.error("FAIL: zip exceeds the panel's 32 MiB hard cap");

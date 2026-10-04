@@ -1,10 +1,10 @@
 name: Build aggregate skill source
 
-# Rebuilds the published aggregate from manifest.json and pushes the result.
+# Rebuilds the published aggregate from manifest.json and commits the result.
 # WHY CI (measured, case E-001):
 #   - raw.githubusercontent.com is ECONNRESET on the author's local machine
 #   - api.github.com anonymous = 60 req/h (403 observed); GITHUB_TOKEN = 5000 req/h
-#   - a 5000-skill aggregate needs thousands of blob reads per rebuild
+#   - a full rebuild needs thousands of blob reads
 
 on:
   schedule:
@@ -34,6 +34,8 @@ jobs:
         with:
           node-version: "24"
 
+      # build.mjs defaults to writing into the repository root (skills/ + index.json
+      # + SKILLS.md) because the panel scans the whole repo zip.
       - name: Build aggregate
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -43,15 +45,16 @@ jobs:
       - name: Verify panel constraints
         run: node scripts/verify.mjs
 
-      - name: Collect summary
+      - name: Read build summary
         id: summary
         run: |
           node -e "
             const fs=require('fs');
-            const s=JSON.parse(fs.readFileSync('build-summary.json','utf8'));
-            const out=['skills=' + s.skills,'bytes=' + s.bytes,'skipped=' + s.skipped].join(' ');
-            fs.appendFileSync(process.env.GITHUB_OUTPUT, 'stats=' + out + '\n');
-            console.log(out);
+            const s=JSON.parse(fs.readFileSync('.build-summary.json','utf8'));
+            const line='skills='+s.skills+' bytes='+s.bytes+' skipped='+s.skipped;
+            fs.appendFileSync(process.env.GITHUB_OUTPUT,'stats='+line+'\n');
+            console.log(line);
+            if (s.skills < 1) { console.error('refusing to publish an empty aggregate'); process.exit(1); }
           "
 
       - name: Commit generated tree
@@ -59,7 +62,7 @@ jobs:
           set -e
           git config user.name  "dsh-skill-aggregator[bot]"
           git config user.email "dsh-skill-aggregator@users.noreply.github.com"
-          git add -A skills index.json README.md build-summary.json
+          git add -A skills index.json SKILLS.md
           if git diff --cached --quiet; then
             echo "no changes"
           else

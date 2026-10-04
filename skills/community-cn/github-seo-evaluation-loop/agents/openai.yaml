@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub SEO 评估闭环"
+  short_description: "定期追踪 GitHub 项目 SEO 指标并沉淀优化闭环"
+  default_prompt: "用 GitHub SEO 评估闭环追踪本周指标，输出证据、对比和下一轮实验建议。"

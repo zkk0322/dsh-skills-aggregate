@@ -1,0 +1,1296 @@
+{
+  "generatedAt": "2026-10-04T08:44:26.968Z",
+  "budgetBytes": 27262976,
+  "usedBytes": 18484802,
+  "skills": [
+    {
+      "name": "academy-guide",
+      "category": "official",
+      "description": ">",
+      "path": "skills/official/academy-guide",
+      "source": "anthropics/skills",
+      "sourceRef": "main",
+      "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/academy-guide",
+      "license": "see upstream (Anthropic Agent Skills)",
+      "bytes": 19100
+    },
+    {
+      "name": "claude-api",
+      "category": "official",
+      "description": "|-",
+      "path": "skills/official/claude-api",
+      "source": "anthropics/skills",
+      "sourceRef": "main",
+      "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/claude-api",
+      "license": "see upstream (Anthropic Agent Skills)",
+      "bytes": 1598024
+    },
+    {
+      "name": "discernment-nudge",
+      "category": "official",
+      "description": ">",
+      "path": "skills/official/discernment-nudge",
+      "source": "anthropics/skills",
+      "sourceRef": "main",
+      "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/discernment-nudge",
+      "license": "see upstream (Anthropic Agent Skills)",
+      "bytes": 21937
+    },
+    {
+      "name": "algorithmic-art",
+      "category": "official-zh",
+      "description": "使用 p5.js 创建带有种子随机性和交互式参数探索的算法艺术。当用户请求使用代码创建艺术、生成艺术、算法艺术、流场或粒子系统时使用此技能。创作原创算法艺术，而不是复制现有艺术家的作品，以避免版权侵犯。",
+      "path": "skills/official-zh/algorithmic-art",
+      "source": "LeastBit/Anthropics_skills_zh-CN",
+      "sourceRef": "main",
+      "sourceUrl": "https://github.com/LeastBit/Anthropics_skills_zh-CN/tree/main/skills/algorithmic-art",
+      "license": "see upstream",
+      "bytes": 56673
+    },
+    {
+      "name": "brand-guidelines",
+      "category": "official-zh",
+      "description": "将 Anthropic 官方品牌颜色和字体应用于任何可能需要 Anthropic 视觉风格的作品。适用于品牌颜色或样式指南、视觉格式化或公司设计标准的场景。",
+      "path": "skills/official-zh/brand-guidelines",
+      "source": "LeastBit/Anthropics_skills_zh-CN",
+      "sourceRef": "main",
+      "sourceUrl": "https://github.com/LeastBit/Anthropics_skills_zh-CN/tree/main/skills/brand-guidelines",
+      "license": "see upstream",
+      "bytes": 13403
+    },
+    {
+      "name": "canvas-design",
+      "category": "official-zh",
+      "description": "使用设计哲学创作精美的 .png 和 .pdf 格式视觉艺术作品。当用户要求创作海报、艺术品、设计作品或其他静态作品时，应使用此技能。创作原创视觉设计，切勿复制现有艺术家的作品以避免版权侵权。",
+      "path": "skills/official-zh/canvas-design",
+      "source": "LeastBit/Anthropics_skills_zh-CN",
+      "sourceRef": "main",
+      "sourceUrl": "https://github.com/LeastBit/Anthropics_skills_zh-CN/tree/main/skills/canvas-design",
+      "license": "see upstream",
+      "bytes": 5552418
+    },
+    {
+      "name": "doc-coauthoring",
+      "category": "official-zh",
+      "description": "引导用户通过结构化的工作流程来协作撰写文档。当用户想要撰写文档、提案、技术规格说明、决策文档或类似的结构化内容时使用。这个工作流程帮助用户高效地传递上下文信息、通过迭代优化内容，并验证文档对读者是否有效。当用户提到撰写文档、创建提案、起草规格说明或类似的文档任务时触发。",
+      "path": "skills/official-zh/doc-coauthoring",
+      "source": "LeastBit/Anthropics_skills_zh-CN",
+      "sourceRef": "main",
+      "sourceUrl": "https://github.com/LeastBit/Anthropics_skills_zh-CN/tree/main/skills/doc-coauthoring",
+      "license": "see upstream",
+      "bytes": 14924
+    },
+    {
+      "name": "docx",
+      "category": "official-zh",
+      "description": "全面的文档创建、编辑和分析功能，支持修订追踪、批注、格式保留和文本提取。当 Claude 需要处理专业文档（.docx 文件）时使用：(1) 创建新文档，(2) 修改或编辑内容，(3) 处理修订追踪，(4) 添加批注，或其他任何文档任务",
+      "path": "skills/official-zh/docx",
+      "source": "LeastBit/Anthropics_skills_zh-CN",
+      "sourceRef": "main",
+      "sourceUrl": "https://github.com/LeastBit/Anthropics_skills_zh-CN/tree/main/skills/docx",
+      "license": "see upstream",
+      "bytes": 1183023
+    },
+    {
+      "name": "frontend-design",
+      "category": "official-zh",
+      "description": "创建独特的、生产级别的高质量前端界面。当用户要求构建网页组件、页面、作品、海报或应用程序时使用此技能（例如网站、落地页、仪表盘、React 组件、HTML/CSS 布局，或对任何网页 UI 进行样式美化）。生成富有创意、精致的代码和 UI 设计，避免千篇一律的 AI 审美。",
+      "path": "skills/official-zh/frontend-design",
+      "source": "LeastBit/Anthropics_skills_zh-CN",
+      "sourceRef": "main",
+      "sourceUrl": "https://github.com/LeastBit/Anthropics_skills_zh-CN/tree/main/skills/frontend-design",
+      "license": "see upstream",
+      "bytes": 14291
+    },
+    {
+      "name": "internal-comms",
+      "category": "official-zh",
+      "description": "一套帮助我撰写各类内部沟通文档的资源，使用公司偏好的格式。当被要求撰写任何形式的内部沟通文档（状态报告、领导层更新、3P 更新、公司简报、常见问题解答、事件报告、项目更新等）时，Claude 应使用此技能。",
+      "path": "skills/official-zh/internal-comms",
+      "source": "LeastBit/Anthropics_skills_zh-CN",
+      "sourceRef": "main",
+      "sourceUrl": "https://github.com/LeastBit/Anthropics_skills_zh-CN/tree/main/skills/internal-comms",
+      "license": "see upstream",
+      "bytes": 12712
+    },
+    {
+      "name": "mcp-builder",
+      "category": "official-zh",
+      "description": "构建高质量 MCP（模型上下文协议）服务器的指南，使 LLM 能够通过精心设计的工具与外部服务交互。在使用 Python (FastMCP) 或 Node/TypeScript (MCP SDK) 构建 MCP 服务器以集成外部 API 或服务时使用。",
+      "path": "skills/official-zh/mcp-builder",
+      "source": "LeastBit/Anthropics_skills_zh-CN",
+      "sourceRef": "main",
+      "sourceUrl": "https://github.com/LeastBit/Anthropics_skills_zh-CN/tree/main/skills/mcp-builder",
+      "license": "see upstream",
+      "bytes": 114913
+    },
+    {
+      "name": "pdf",
+      "category": "official-zh",
+      "description": "全面的 PDF 操作工具包，用于提取文本和表格、创建新 PDF、合并/拆分文档以及处理表单。当 Claude 需要填写 PDF 表单或以编程方式大规模处理、生成或分析 PDF 文档时使用。",
+      "path": "skills/official-zh/pdf",
+      "source": "LeastBit/Anthropics_skills_zh-CN",
+      "sourceRef": "main",
+      "sourceUrl": "https://github.com/LeastBit/Anthropics_skills_zh-CN/tree/main/skills/pdf",
+      "license": "see upstream",
+      "bytes": 62286
+    },
+    {
+      "name": "pptx",
+      "category": "official-zh",
+      "description": "演示文稿创建、编辑和分析。当 Claude 需要处理演示文稿（.pptx 文件）时使用，包括：(1) 创建新演示文稿，(2) 修改或编辑内容，(3) 处理版式，(4) 添加批注或演讲者备注，或其他任何演示文稿任务",
+      "path": "skills/official-zh/pptx",
+      "source": "LeastBit/Anthropics_skills_zh-CN",
+      "sourceRef": "main",
+      "sourceUrl": "https://github.com/LeastBit/Anthropics_skills_zh-CN/tree/main/skills/pptx",
+      "license": "see upstream",
+      "bytes": 1228511
+    },
+    {
+      "name": "skill-creator",
+      "category": "official-zh",
+      "description": "创建高效技能的指南。当用户想要创建新技能（或更新现有技能）以扩展 Claude 的能力，包括专业知识、工作流程或工具集成时，应使用此技能。",
+      "path": "skills/official-zh/skill-creator",
+      "source": "LeastBit/Anthropics_skills_zh-CN",
+      "sourceRef": "main",
+      "sourceUrl": "https://github.com/LeastBit/Anthropics_skills_zh-CN/tree/main/skills/skill-creator",
+      "license": "see upstream",
+      "bytes": 46734
+    },
+    {
+      "name": "slack-gif-creator",
+      "category": "official-zh",
+      "description": "用于创建针对 Slack 优化的动画 GIF 的知识和工具集。提供约束条件、验证工具和动画概念。当用户请求为 Slack 创建动画 GIF 时使用，例如\"为 Slack 制作一个 X 做 Y 的 GIF\"。",
+      "path": "skills/official-zh/slack-gif-creator",
+      "source": "LeastBit/Anthropics_skills_zh-CN",
+      "sourceRef": "main",
+      "sourceUrl": "https://github.com/LeastBit/Anthropics_skills_zh-CN/tree/main/skills/slack-gif-creator",
+      "license": "see upstream",
+      "bytes": 43650
+    },
+    {
+      "name": "theme-factory",
+      "category": "official-zh",
+      "description": "用于为作品应用主题样式的工具包。这些作品可以是幻灯片、文档、报告、HTML 落地页等。提供 10 个预设主题，包含颜色/字体配置，可应用于任何已创建的作品，也可以即时生成新主题。",
+      "path": "skills/official-zh/theme-factory",
+      "source": "LeastBit/Anthropics_skills_zh-CN",
+      "sourceRef": "main",
+      "sourceUrl": "https://github.com/LeastBit/Anthropics_skills_zh-CN/tree/main/skills/theme-factory",
+      "license": "see upstream",
+      "bytes": 18906
+    },
+    {
+      "name": "web-artifacts-builder",
+      "category": "official-zh",
+      "description": "用于使用现代前端 Web 技术（React、Tailwind CSS、shadcn/ui）创建复杂的、多组件的 claude.ai HTML artifact 的工具套件。适用于需要状态管理、路由或 shadcn/ui 组件的复杂 artifact - 不适用于简单的单文件 HTML/JSX artifact。",
+      "path": "skills/official-zh/web-artifacts-builder",
+      "source": "LeastBit/Anthropics_skills_zh-CN",
+      "sourceRef": "main",
+      "sourceUrl": "https://github.com/LeastBit/Anthropics_skills_zh-CN/tree/main/skills/web-artifacts-builder",
+      "license": "see upstream",
+      "bytes": 25908
+    },
+    {
+      "name": "webapp-testing",
+      "category": "official-zh",
+      "description": "使用 Playwright 与本地 Web 应用程序交互及进行测试的工具包。支持验证前端功能、调试 UI 行为、捕获浏览器截图以及查看浏览器日志。",
+      "path": "skills/official-zh/webapp-testing",
+      "source": "LeastBit/Anthropics_skills_zh-CN",
+      "sourceRef": "main",
+      "sourceUrl": "https://github.com/LeastBit/Anthropics_skills_zh-CN/tree/main/skills/webapp-testing",
+      "license": "see upstream",
+      "bytes": 19018
+    },
+    {
+      "name": "xlsx",
+      "category": "official-zh",
+      "description": "全面的电子表格创建、编辑和分析功能，支持公式、格式化、数据分析和可视化。当 Claude 需要处理电子表格（.xlsx、.xlsm、.csv、.tsv 等）时使用，包括：(1) 创建带有公式和格式的新电子表格，(2) 读取或分析数据，(3) 修改现有电子表格同时保留公式，(4) 电子表格中的数据分析和可视化，或 (5) 重新计算公式",
+      "path": "skills/official-zh/xlsx",
+      "source": "LeastBit/Anthropics_skills_zh-CN",
+      "sourceRef": "main",
+      "sourceUrl": "https://github.com/LeastBit/Anthropics_skills_zh-CN/tree/main/skills/xlsx",
+      "license": "see upstream",
+      "bytes": 17898
+    },
+    {
+      "name": "adaptive-quality-gate",
+      "category": "community-cn",
+      "description": "Use when work produces a deliverable, factual claim, dataset, code change, decision, publication, deployment, automation, or irreversible action whose failure would matter; when the user asks for a quality gate, acceptance criteria, QA, completeness, validation, audit, evidence, preflight, release readiness, or a definition of done; or before claiming completion on medium- or high-risk work. Automatically decide whether a formal gate is warranted, derive task-specific pass/fail criteria, gather evidence, and block unsupported completion. Make sure to use this skill even when the user does not say \"quality gate\" if consequential work needs acceptance criteria or completion evidence. Skip formal gating for trivial, reversible, low-impact requests.",
+      "path": "skills/community-cn/adaptive-quality-gate",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/01-agent-engineering/adaptive-quality-gate",
+      "license": "see upstream",
+      "bytes": 10387
+    },
+    {
+      "name": "deep-research",
+      "category": "community-cn",
+      "description": "Multi-source deep research using firecrawl and exa MCPs. Searches the web, synthesizes findings, and delivers cited reports with source attribution. Use when the user wants thorough research on any topic with evidence and citations.",
+      "path": "skills/community-cn/deep-research",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/01-agent-engineering/deep-research",
+      "license": "see upstream",
+      "bytes": 4798
+    },
+    {
+      "name": "find-skills",
+      "category": "community-cn",
+      "description": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. Crucially, it autonomously discovers and proposes agent skills whenever the user wants to build a tool, automate a task, or overcome a technical challenge, providing ready-made capabilities for users who prefer zero-code or low-code solutions.",
+      "path": "skills/community-cn/find-skills",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/01-agent-engineering/find-skills",
+      "license": "see upstream",
+      "bytes": 5427
+    },
+    {
+      "name": "project-cleanup-audit",
+      "category": "community-cn",
+      "description": "Audit and safely clean local project repositories or workspaces with excessive generated files, old project residue, dirty Git status, stale worktrees, build caches, duplicate nested projects, confusing roots, or agent context/token waste. Use when the user asks to organize a repo, remove useless files, classify valid project files, clean untracked/deleted files, reduce disk usage, migrate from an old repo layout to a canonical project, or prepare a repository for future Codex/agent work.",
+      "path": "skills/community-cn/project-cleanup-audit",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/01-agent-engineering/project-cleanup-audit",
+      "license": "see upstream",
+      "bytes": 27002
+    },
+    {
+      "name": "santa-method",
+      "category": "community-cn",
+      "description": "Multi-agent adversarial verification with convergence loop. Two independent review agents must both pass before output ships.",
+      "path": "skills/community-cn/santa-method",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/01-agent-engineering/santa-method",
+      "license": "see upstream",
+      "bytes": 12793
+    },
+    {
+      "name": "skill-lifecycle-manager",
+      "category": "community-cn",
+      "description": "Manage agent-skill lifecycles across local, global, project, Skill Hub, skills.sh, GitHub, plugin-cache, and system roots. Use when searching, recommending, installing, updating, upgrading, syncing, merging, auditing, deduplicating, cleaning, packaging, publishing, or validating skills; choosing project versus global scope; verifying upstream source, stars, or installs; or working with skill-upgrade, check_upstreams.ps1, sync-pull/push, junctions, skills-lock.json, or skill-upstreams.json. Do not use for ordinary software-package upgrades or non-skill file cleanup.",
+      "path": "skills/community-cn/skill-lifecycle-manager",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/01-agent-engineering/skill-lifecycle-manager",
+      "license": "see upstream",
+      "bytes": 44931
+    },
+    {
+      "name": "liquid-glass-design",
+      "category": "community-cn",
+      "description": "iOS 26 Liquid Glass design system — dynamic glass material with blur, reflection, and interactive morphing for SwiftUI, UIKit, and WidgetKit.",
+      "path": "skills/community-cn/liquid-glass-design",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/02-coding-languages/swift/liquid-glass-design",
+      "license": "see upstream",
+      "bytes": 9045
+    },
+    {
+      "name": "netlify-cli",
+      "category": "community-cn",
+      "description": "使用 Netlify CLI 完成安装、认证、站点关联、本地开发、环境变量管理与部署。",
+      "path": "skills/community-cn/netlify-cli",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/03-frameworks/netlify-cli",
+      "license": "see upstream",
+      "bytes": 408386
+    },
+    {
+      "name": "bioc-fulltext-fetch",
+      "category": "community-cn",
+      "description": "从 PubMed/PMC 论文取结构化全文并按章节切分为 RAG 友好的 chunk。当用户需要批量抽取论文全文、按 Methods/Results 等章节分段、提取表格上下文、构建文献向量库时，使用本 skill。支持 PMID（标题+摘要）和 PMCID（全文，开放获取子集）。token 级 RAG chunking 不跨章节，支持缓存与限流。",
+      "path": "skills/community-cn/bioc-fulltext-fetch",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/06-data-search/bioc-fulltext-fetch",
+      "license": "see upstream",
+      "bytes": 23833
+    },
+    {
+      "name": "clinical-trials-v2",
+      "category": "community-cn",
+      "description": "Use this skill whenever the user asks about clinical trial status, recruitment, trial phases (1-4), outcomes, trial registries, NCT IDs, or any query on ClinicalTrials.gov data. Real-time lookup of trial protocols, results, enrollment status, sponsors, and interventions via ClinicalTrials.gov API v2. Handles: 'What is the latest status of NCT04368728?', 'Find Phase 3 BTK inhibitor trials currently recruiting', 'Show primary outcomes for this trial', 'Which trials use Pembrolizumab?', 'Recruiting trials for Acute Myeloid Leukemia'. Real-time, single-query ≤1000 records. Delegates to: aact-bulk-trials (bulk >10k), pubmed-eutils (PubMed literature), medical-evidence-grading (GRADE rating), evidence-appendix-sync (reference formatting).",
+      "path": "skills/community-cn/clinical-trials-v2",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/06-data-search/clinical-trials-v2",
+      "license": "see upstream",
+      "bytes": 19774
+    },
+    {
+      "name": "cn-clinical-guidelines-fetch",
+      "category": "community-cn",
+      "description": "抓中国权威医学指南正文（CSCO / NCCN 中文版 / NMPA / CDE / NHC）并返回结构化\"治疗推荐表\"。当用户做中国市场的疾病调研、需要 I 级证据来源、或需要交叉验证治疗方案推荐是否符合 CSCO 指南时使用。v2 (2026-04-26)：Cite-or-Block 升级 — 加 sources_dir 参数完整存档原文 + locate_section_in_guideline 函数，与 citation-anchor-resolver 联动。Iron Law：locale=zh-CN+geo=CN 时本 skill 在 PubMed 召回之前必跑，所有治疗方案推荐必须命中指南 I 级 ≥ 1 个。Fetches Chinese authoritative clinical guidelines (CSCO, NCCN-zh, NMPA, CDE, NHC) and returns structured \"treatment recommendation tables\". MUST run before PubMed recall when locale=zh-CN+geo=CN; all proposed treatment recs must hit at least one guideline Level-I drug.",
+      "path": "skills/community-cn/cn-clinical-guidelines-fetch",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/06-data-search/cn-clinical-guidelines-fetch",
+      "license": "see upstream",
+      "bytes": 58612
+    },
+    {
+      "name": "data-scraper-agent",
+      "category": "community-cn",
+      "description": "Build a fully automated AI-powered data collection agent for any public source — job boards, prices, news, GitHub, sports, anything. Scrapes on a schedule, enriches data with a free LLM (Gemini Flash), stores results in Notion/Sheets/Supabase, and learns from user feedback. Runs 100% free on GitHub Actions. Use when the user wants to monitor, collect, or track any public data automatically.",
+      "path": "skills/community-cn/data-scraper-agent",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/06-data-search/data-scraper-agent",
+      "license": "see upstream",
+      "bytes": 24084
+    },
+    {
+      "name": "europepmc-search",
+      "category": "community-cn",
+      "description": "多源文献聚合检索：PubMed + PMC + 预印本（bioRxiv / medRxiv / ChemRxiv / Research Square）+ NCBI Bookshelf + 专利 一次调用，自动 PMID/PMCID/DOI 三级去重。用于医学 RAG 知识库广召回、全文 OA 链接发现、资助信息检索。返回完整元数据（OA 链接、citations、grants）。定位：广召回 · 多源 · RAG 友好。与 pubmed-eutils 互补 —— 本 skill 做\"撒网\"式多源聚合，后者做单源精准 + Clinical Queries。不做：单源精准检索（→ pubmed-eutils）、全文 XML 抽取（→ bioc-fulltext-fetch）、实体识别（→ pubtator-entity-search）、证据分级（→ medical-evidence-grading）。",
+      "path": "skills/community-cn/europepmc-search",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/06-data-search/europepmc-search",
+      "license": "see upstream",
+      "bytes": 22377
+    },
+    {
+      "name": "evidence-appendix-sync",
+      "category": "community-cn",
+      "description": ">",
+      "path": "skills/community-cn/evidence-appendix-sync",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/06-data-search/evidence-appendix-sync",
+      "license": "see upstream",
+      "bytes": 33404
+    },
+    {
+      "name": "market-research-reports",
+      "category": "community-cn",
+      "description": "Generate 50+ page professional market research reports with consulting-firm quality (McKinsey, BCG, Gartner style). Includes Porter's Five Forces, PESTLE, SWOT, TAM/SAM/SOM analysis, extensive visualizations, and LaTeX formatting. Use for competitive landscape analysis, market sizing, investment due diligence, and strategic planning. Integrates with research-lookup for data gathering and scientific-schematics for visualization generation.",
+      "path": "skills/community-cn/market-research-reports",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/06-data-search/market-research-reports",
+      "license": "see upstream",
+      "bytes": 203754
+    },
+    {
+      "name": "market-sizing-mece-foundation",
+      "category": "community-cn",
+      "description": ">",
+      "path": "skills/community-cn/market-sizing-mece-foundation",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/06-data-search/market-sizing-mece-foundation",
+      "license": "see upstream",
+      "bytes": 47766
+    },
+    {
+      "name": "medical-evidence-grading",
+      "category": "community-cn",
+      "description": "Medical evidence grading orchestrator. 当用户需要评估医学文献的证据强度、比较多篇论文的质量、查找某疾病的高等级证据(指南或 RCT)、或验证临床声明的证据支持度时,调用本 skill。整合 6 个原子 skill 的检索结果,按证据金字塔自动分级为 A/B/C/D。优先使用 BioMCP fast-path(~3-5s),无 BioMCP 时回退 slow-path(~15-25s)。",
+      "path": "skills/community-cn/medical-evidence-grading",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/06-data-search/medical-evidence-grading",
+      "license": "see upstream",
+      "bytes": 33292
+    },
+    {
+      "name": "medical-research",
+      "category": "community-cn",
+      "description": "Retrieves scientific papers from PubMed and creates plain-language research summaries. Use when users ask about medical research, scientific studies, clinical trials, disease treatments, or want to understand recent scientific literature on any biomedical topic.",
+      "path": "skills/community-cn/medical-research",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/06-data-search/medical-research",
+      "license": "see upstream",
+      "bytes": 39244
+    },
+    {
+      "name": "nmpa-drug-registry-lookup",
+      "category": "community-cn",
+      "description": "中国药品权威数据库查询 — NMPA(国家药监局) + CDE(药品审评中心) + DrugBank(英文名/ATC) + PubChem(化学结构) 多源融合,提供(通用名 ↔ 商品名 ↔ 英文名 ↔ 适应症 ↔ NMPA 批文号 ↔ 上市日期)精确映射。Make sure to use this skill whenever the user mentions 药品名 / 通用名 / 商品名 / NMPA / 国药准字 / 药监局 / CDE / drug brand name / generic name / drug registry / pharmaceutical lookup / drug verification / 药物核验 / 商品名对应 / drug cross-check / drug authority lookup. 在任何 medical / market-sizing / clinical / disease-research 报告生成阶段,**所有药品提及必须先调 lookup_drug() 验证**,严禁 LLM 凭训练记忆拼凑通用名↔商品名↔英文名对应关系。LLM 训练截止后药企会更换商品名、新药持续上市,记忆完全不可信。Iron Law:lookup 返回 None → 调用方必须 raise UnverifiedDrugError,不允许 fallback 到记忆。免费公开数据源,跨平台:Claude Code / Codex / Gemini CLI 三端均可 auto-trigger,实现仅依赖 httpx + beautifulsoup4 标准生态,不绑定任何厂商 SDK。",
+      "path": "skills/community-cn/nmpa-drug-registry-lookup",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/06-data-search/nmpa-drug-registry-lookup",
+      "license": "see upstream",
+      "bytes": 44413
+    },
+    {
+      "name": "pubmed-eutils",
+      "category": "community-cn",
+      "description": "Search PubMed and retrieve structured biomedical literature with PMID lists, abstracts, MeSH terms, publication types, and PMC IDs for full-text access. Use this skill whenever the user mentions PubMed, PMID, MeSH terms, Clinical Queries, NCBI, E-utilities, or needs evidence for systematic reviews, RCT searches, drug-disease research, mechanism mapping, market research, or clinical evidence gathering. Make sure to use at the START of any medical evidence pipeline (diagnostic queries, prognosis, therapy effectiveness, observational studies, real-world evidence, clinical guidelines). Outputs structured records (title, abstract, journal, year, MeSH, publication type, PMID↔PMCID mapping)—does NOT perform semantic reranking (delegated to medical-evidence-grading), full-text extraction (delegated to bioc-fulltext-fetch), or entity annotation (delegated to pubtator-entity-search). Free official NCBI API covering 37M+ biomedical records. Cross-platform (Claude Code / Codex / Gemini CLI) with zero external SDK dependencies.",
+      "path": "skills/community-cn/pubmed-eutils",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/06-data-search/pubmed-eutils",
+      "license": "see upstream",
+      "bytes": 17929
+    },
+    {
+      "name": "pubmed-search",
+      "category": "community-cn",
+      "description": "Search PubMed biomedical literature with natural language queries powered by Valyu semantic search. Full-text access, integrate into your AI projects.",
+      "path": "skills/community-cn/pubmed-search",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/06-data-search/pubmed-search",
+      "license": "see upstream",
+      "bytes": 9761
+    },
+    {
+      "name": "pubtator-entity-search",
+      "category": "community-cn",
+      "description": "NLM PubTator3 实体级关系挖掘原子 skill — 在 PubMed 文献里检索\"疾病-药物-基因-化学品-突变-物种-细胞系\"的标注与关系三元组。当用户问\"BTK 与肺曲霉病的关联文献\"、\"BTK 抑制剂(MeSH D000077180)在哪些研究被讨论\"、\"标注这些 PMID 中提到的所有疾病/药物/基因实体\"、\"ibrutinib 的 MeSH/DrugBank ID\"、\"voriconazole 与 CYP2C19 药物-基因相互作用\"、\"BRAF V600E 突变 / rs113488022 检索\"、\"实体共现 / co-mention / 关系挖掘 / 实体规范化 / NER / annotation / entity normalization / disease-gene association / drug-gene interaction / chemical-disease relation\" 时使用。无需 API key,跨平台稳定。**实体级 + 关系级**定位 — 不做综合文献检索(走 pubmed-eutils / europepmc-search)、不做全文段落抽取(走 bioc-fulltext-fetch)、不做证据等级排序(走 medical-evidence-grading)。",
+      "path": "skills/community-cn/pubtator-entity-search",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/06-data-search/pubtator-entity-search",
+      "license": "see upstream",
+      "bytes": 20996
+    },
+    {
+      "name": "report-bundle-builder",
+      "category": "community-cn",
+      "description": ">",
+      "path": "skills/community-cn/report-bundle-builder",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/06-data-search/report-bundle-builder",
+      "license": "see upstream",
+      "bytes": 49942
+    },
+    {
+      "name": "github-readme-visuals",
+      "category": "community-cn",
+      "description": "Create or refresh original product hero images, interface screenshots, and image-led README sections for GitHub repositories. Use when a user asks to make a GitHub README show the product visually, add screenshots, design a README hero image, or prepare repository-bound visual documentation.",
+      "path": "skills/community-cn/github-readme-visuals",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/07-media-content/github-readme-visuals",
+      "license": "see upstream",
+      "bytes": 20100
+    },
+    {
+      "name": "html-design-polish",
+      "category": "community-cn",
+      "description": "网页需要产品清晰度、信息层级、响应式或视觉系统美化、重设计或设计审计时使用。",
+      "path": "skills/community-cn/html-design-polish",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/07-media-content/html-design-polish",
+      "license": "see upstream",
+      "bytes": 18850
+    },
+    {
+      "name": "imagegen",
+      "category": "community-cn",
+      "description": "Generate or edit raster images when the task benefits from AI-created bitmap visuals such as photos, illustrations, textures, sprites, mockups, or transparent-background cutouts. Use when Codex should create a brand-new image, transform an existing image, or derive visual variants from references, and the output should be a bitmap asset rather than repo-native code or vector. Do not use when the task is better handled by editing existing SVG/vector/code-native assets, extending an established icon or logo system, or building the visual directly in HTML/CSS/canvas.",
+      "path": "skills/community-cn/imagegen",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/07-media-content/imagegen",
+      "license": "see upstream",
+      "bytes": 95982
+    },
+    {
+      "name": "jianying-editor",
+      "category": "community-cn",
+      "description": "剪映 (JianYing) AI自动化剪辑的高级封装 API (JyWrapper)，提供开箱即用的 Python 接口，支持录屏、素材导入、字幕生成、Web 动效合成及项目导出。全面适配 MacOS (Apple Silicon/Intel) 与 Windows，支持 v5.9+ (draft_info.json) 架构、工程自修复、智能配音字幕及录屏变焦。",
+      "path": "skills/community-cn/jianying-editor",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/07-media-content/jianying-editor",
+      "license": "see upstream",
+      "bytes": 3022064
+    },
+    {
+      "name": "ppt-nano",
+      "category": "community-cn",
+      "description": "白板板书风格 PPT 生成。用户说「做PPT」「生成幻灯片」「白板风格演示」「板书」等时使用。支持 5 步标准工作流：确认风格→整理页码→检查依赖→逐页生成→合成下载。输出高保真白板照片，手写感 shufa 笔触，黑/蓝/红三色马克笔，适合教学、汇报、头脑风暴。每页需参考图和提示词前缀，封面必用专用前缀防止保留原文字。",
+      "path": "skills/community-cn/ppt-nano",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/07-media-content/ppt-nano",
+      "license": "see upstream",
+      "bytes": 2065201
+    },
+    {
+      "name": "remotion-video-creation",
+      "category": "community-cn",
+      "description": "Best practices for Remotion - Video creation in React. 29 domain-specific rules covering 3D, animations, audio, captions, charts, transitions, and more.",
+      "path": "skills/community-cn/remotion-video-creation",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/07-media-content/remotion-video-creation",
+      "license": "see upstream",
+      "bytes": 77954
+    },
+    {
+      "name": "wechat-article",
+      "category": "community-cn",
+      "description": "WeChat article creator with Fu Sheng's writing style - conversational, story-driven, opinionated. Use this skill whenever the user mentions writing a WeChat article, drafting public account content, crafting a viral headline, creating article covers, writing in Fu Sheng's style, or any request involving 公众号, 微信文章, 爆款标题, or 傅盛风格 — even if they don't explicitly say \"skill\".",
+      "path": "skills/community-cn/wechat-article",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/07-media-content/wechat-article",
+      "license": "see upstream",
+      "bytes": 198202
+    },
+    {
+      "name": "yq-editorial-presentation-html",
+      "category": "community-cn",
+      "description": "可变体的 warm editorial 演示设计系统，用于 presentation、case sharing、项目汇报、战略叙事和产品发布。支持横向全屏 HTML deck 与程序化 PPTX，通过 style profile、语义 slide manifest、构图新颖度规划和反重复验证，在保持编辑设计 DNA 的同时避免固定配色、固定卡片和固定 11 页模板。用户要求 Pfizer/Anthropic/warm editorial/编辑设计风格、类似血液科那套，或需要高规格且非模板化的 HTML/PPT 演示时使用。",
+      "path": "skills/community-cn/yq-editorial-presentation-html",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/07-media-content/yq-editorial-presentation-html",
+      "license": "see upstream",
+      "bytes": 1045968
+    },
+    {
+      "name": "decision-tree-with-lp-embedding",
+      "category": "community-cn",
+      "description": ">",
+      "path": "skills/community-cn/decision-tree-with-lp-embedding",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/08-writing-marketing/decision-tree-with-lp-embedding",
+      "license": "see upstream",
+      "bytes": 17336
+    },
+    {
+      "name": "github-repo-seo-standard",
+      "category": "community-cn",
+      "description": "Use when auditing, planning, measuring, or implementing GitHub repository discoverability work, including README/README_zh SEO review, Description or Topics proposals, release copy review, search ranking tracking, competitor or alternative term handling, Baidu/Bing/AI search channel assessment, site asset readiness, or portfolio rollout.",
+      "path": "skills/community-cn/github-repo-seo-standard",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/08-writing-marketing/github-repo-seo-standard",
+      "license": "see upstream",
+      "bytes": 31320
+    },
+    {
+      "name": "github-seo-evaluation-loop",
+      "category": "community-cn",
+      "description": "Use when running recurring GitHub repository SEO evaluation, comparing broad Chinese search visibility over time, producing metrics evidence, weekly summaries, manual Baidu/Bing/AI search tasks, or deciding whether an SEO experiment should trigger another optimization round.",
+      "path": "skills/community-cn/github-seo-evaluation-loop",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/08-writing-marketing/github-seo-evaluation-loop",
+      "license": "see upstream",
+      "bytes": 29094
+    },
+    {
+      "name": "yq-article-style-imitation",
+      "category": "community-cn",
+      "description": "Use when asked to study any writer or author, imitate article style, directly mimic a living or historical writer's prose style when requested, revise an imitation draft, or adapt Chinese articles for WeChat or Xiaohongshu.",
+      "path": "skills/community-cn/yq-article-style-imitation",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/08-writing-marketing/yq-article-style-imitation",
+      "license": "see upstream",
+      "bytes": 51497
+    },
+    {
+      "name": "citation-anchor-resolver",
+      "category": "community-cn",
+      "description": "|",
+      "path": "skills/community-cn/citation-anchor-resolver",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/citation-anchor-resolver",
+      "license": "see upstream",
+      "bytes": 47632
+    },
+    {
+      "name": "cite-bound-content-generator",
+      "category": "community-cn",
+      "description": "Phase 4 Turn 1 of disease-market-sizing-orchestration. Generates report HTML with mandatory citation anchors per fact claim. Reads contract + staging + sources/. Every drug/treatment/stat/recommendation MUST carry [pmid:.../guideline:.../nct:...] anchor that resolves to an actual file in sources/. NEVER hardcode drug names or numerical claims. Use AFTER evidence recall (phase 3), BEFORE content-verification-layer (Turn 2).",
+      "path": "skills/community-cn/cite-bound-content-generator",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/cite-bound-content-generator",
+      "license": "see upstream",
+      "bytes": 16996
+    },
+    {
+      "name": "content-verification-layer",
+      "category": "community-cn",
+      "description": "Phase 4 Turn 2 of disease-market-sizing-orchestration (A6' upgrade). Audits compose output via Cite-or-Block strict — every anchor must reverse-resolve to an actual file in sources/, every fact claim must have an anchor. Returns verdict (ok/blocked) + violations list. Use AFTER cite-bound-content-generator (Turn 1), BEFORE report-bundle-builder (phase 5).",
+      "path": "skills/community-cn/content-verification-layer",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/content-verification-layer",
+      "license": "see upstream",
+      "bytes": 27169
+    },
+    {
+      "name": "contract-elicitor",
+      "category": "community-cn",
+      "description": "Use FIRST when user requests any disease market sizing report (e.g. \"做 X 市场调研\" / \"Run market sizing for X\"). Elicits 4-6 startup questions (evidence window, geography, international comparison, report depth, user role) and writes .cache/<slug>/contract.json. ALWAYS invoke before disease-market-sizing-orchestration. Validates against schemas/contract.schema.json.",
+      "path": "skills/community-cn/contract-elicitor",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/contract-elicitor",
+      "license": "see upstream",
+      "bytes": 7339
+    },
+    {
+      "name": "contract-review",
+      "category": "community-cn",
+      "description": "合同审核技能,通过添加基于评论的问题标注而不改变原始文本。执行三层审核(基础、业务、法律),编写结构化评论(问题类型、风险原因、修订建议),风险等级通过审核人姓名编码,并生成合同摘要、综合意见和Mermaid业务流程图(含渲染图像)。输出语言必须遵循合同的语言。",
+      "path": "skills/community-cn/contract-review",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/contract-review",
+      "license": "see upstream",
+      "bytes": 170023
+    },
+    {
+      "name": "creating-financial-models",
+      "category": "community-cn",
+      "description": "高级财务建模套件，包含DCF估值、敏感性分析、蒙特卡洛模拟和场景规划。当用户需要对企业、项目或并购交易进行投资分析、股权估值、IRR/MOIC计算、WACC建模，或要求建立DCF模型、运行概率模拟、制作敏感性表格时，请主动使用此技能。",
+      "path": "skills/community-cn/creating-financial-models",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/creating-financial-models",
+      "license": "see upstream",
+      "bytes": 33989
+    },
+    {
+      "name": "design-system-injector",
+      "category": "community-cn",
+      "description": "Phase 5 part of disease-market-sizing-orchestration. Injects consulting palette (navy/gold/blue) + base CSS + floating TOC + section dividers into raw report HTML. Validates token coverage ≥60% (warn) and floating TOC li ≥5 (block). Use AFTER content-verification passes, BEFORE report-bundle-builder build_all_deliverables.",
+      "path": "skills/community-cn/design-system-injector",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/design-system-injector",
+      "license": "see upstream",
+      "bytes": 4501
+    },
+    {
+      "name": "disease-market-sizing-html-template",
+      "category": "community-cn",
+      "description": ">",
+      "path": "skills/community-cn/disease-market-sizing-html-template",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/disease-market-sizing-html-template",
+      "license": "see upstream",
+      "bytes": 25028
+    },
+    {
+      "name": "disease-market-sizing-orchestration",
+      "category": "community-cn",
+      "description": "Cross-disease market sizing entry skill. Triggered by user one-liner like \"做 X 市场调研\" or \"Run market sizing for X\". Auto-runs 5 phase pipeline: contract → stratify → recall → compose-audit → bundle. Hard-gates on Cite-or-Block: every fact claim must carry citation anchor verifiable against sources/. Resumable mid-run.",
+      "path": "skills/community-cn/disease-market-sizing-orchestration",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/disease-market-sizing-orchestration",
+      "license": "see upstream",
+      "bytes": 18477
+    },
+    {
+      "name": "disease-stratifier",
+      "category": "community-cn",
+      "description": "Phase 2 of disease-market-sizing-orchestration. Discovers disease-specific stratification dimensions by citing guideline sections from sources/guidelines/. ALWAYS uses cite-based discovery — NEVER built-in stratification templates. Output: .cache/<slug>/staging.json. Use AFTER contract-elicitor and AFTER A1' guidelines fetch.",
+      "path": "skills/community-cn/disease-stratifier",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/disease-stratifier",
+      "license": "see upstream",
+      "bytes": 5457
+    },
+    {
+      "name": "drug-citation-verifier",
+      "category": "community-cn",
+      "description": "Cite-or-Block 架构下的药名 cross-check 原子 skill。给定报告文本与 .cache/<slug>/sources/,扫描每个药品提及 → 找最近 citation 锚点 → 核对锚点指向的源里是否真的提到了此药(通用名 + 商品名)。无字典、无 fallback、源里没 = critical。",
+      "path": "skills/community-cn/drug-citation-verifier",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/drug-citation-verifier",
+      "license": "see upstream",
+      "bytes": 40028
+    },
+    {
+      "name": "healthcare-cdss-patterns",
+      "category": "community-cn",
+      "description": "Clinical Decision Support System (CDSS) development patterns. Drug interaction checking, dose validation, clinical scoring (NEWS2, qSOFA), alert severity classification, and integration into EMR workflows.",
+      "path": "skills/community-cn/healthcare-cdss-patterns",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/healthcare-cdss-patterns",
+      "license": "see upstream",
+      "bytes": 9332
+    },
+    {
+      "name": "healthcare-emr-patterns",
+      "category": "community-cn",
+      "description": "EMR/EHR development patterns for healthcare applications. Clinical safety, encounter workflows, prescription generation, clinical decision support integration, and accessibility-first UI for medical data entry.",
+      "path": "skills/community-cn/healthcare-emr-patterns",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/healthcare-emr-patterns",
+      "license": "see upstream",
+      "bytes": 6625
+    },
+    {
+      "name": "healthcare-eval-harness",
+      "category": "community-cn",
+      "description": "Patient safety evaluation harness for healthcare application deployments. Automated test suites for CDSS accuracy, PHI exposure, clinical workflow integrity, and integration compliance. Blocks deployments on safety failures.",
+      "path": "skills/community-cn/healthcare-eval-harness",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/healthcare-eval-harness",
+      "license": "see upstream",
+      "bytes": 7719
+    },
+    {
+      "name": "healthcare-phi-compliance",
+      "category": "community-cn",
+      "description": "Protected Health Information (PHI) and Personally Identifiable Information (PII) compliance patterns for healthcare applications. Covers data classification, access control, audit trails, encryption, and common leak vectors.",
+      "path": "skills/community-cn/healthcare-phi-compliance",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/healthcare-phi-compliance",
+      "license": "see upstream",
+      "bytes": 5573
+    },
+    {
+      "name": "ifi-market-sizing-skill",
+      "category": "community-cn",
+      "description": ">",
+      "path": "skills/community-cn/ifi-market-sizing-skill",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/ifi-market-sizing-skill",
+      "license": "see upstream",
+      "bytes": 71233
+    },
+    {
+      "name": "session-resume",
+      "category": "community-cn",
+      "description": "Mid-run failure recovery for disease-market-sizing-orchestration. Inspects .cache/<slug>/ to determine which phase last completed and which phase to run next. Use when orchestration was interrupted and user wants to continue without restarting from phase 1.",
+      "path": "skills/community-cn/session-resume",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/session-resume",
+      "license": "see upstream",
+      "bytes": 5459
+    },
+    {
+      "name": "xhs-pharma-social-listening",
+      "category": "community-cn",
+      "description": "Run evidence-disciplined Xiaohongshu social listening for foreign pharma employee pain points. Use when the user asks to collect and analyze notes/comments about pharma companies, aliases, roles, compliance, medical affairs, or AI topics, then produce a cited and scored sampled-insight report. Includes independent-evidence counting, MediaCrawler batch collection, and CAPTCHA/461 fallback to Agent Reach/OpenCLI.",
+      "path": "skills/community-cn/xhs-pharma-social-listening",
+      "source": "lubiny0601-spec/Skill-hub",
+      "sourceRef": "mine",
+      "sourceUrl": "https://github.com/lubiny0601-spec/Skill-hub/tree/mine/skills/10-business-industry/xhs-pharma-social-listening",
+      "license": "see upstream",
+      "bytes": 72375
+    }
+  ],
+  "skipped": [
+    {
+      "source": "anthropics/skills",
+      "path": "skills/claude-api/shared/evals/build-eval.md",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "anthropics/skills",
+      "path": "skills/claude-api/shared/evals/cost-hillclimb.md",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "anthropics/skills",
+      "path": "skills/claude-api/shared/evals/eval-audit.md",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "anthropics/skills",
+      "path": "skills/claude-api/shared/evals/eval-hillclimb.md",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "anthropics/skills",
+      "path": "skills/claude-api/shared/evals/report/build-report-lite.mjs",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "anthropics/skills",
+      "path": "skills/claude-api/shared/evals/report/runner-scaffold.mjs",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "anthropics/skills",
+      "path": "skills/claude-api/shared/evals/report/SCHEMA.md",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "anthropics/skills",
+      "path": "skills/internal-comms/examples/3p-updates.md",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "anthropics/skills",
+      "path": "skills/internal-comms/examples/company-newsletter.md",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "anthropics/skills",
+      "path": "skills/internal-comms/examples/faq-answers.md",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "anthropics/skills",
+      "path": "skills/internal-comms/examples/general-comms.md",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "anthropics/skills",
+      "path": "skills/web-artifacts-builder/scripts/shadcn-components.tar.gz",
+      "reason": "binary extension"
+    },
+    {
+      "source": "anthropics/skills",
+      "path": "skills/webapp-testing/examples/console_logging.py",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "anthropics/skills",
+      "path": "skills/webapp-testing/examples/element_discovery.py",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "anthropics/skills",
+      "path": "skills/webapp-testing/examples/static_html_automation.py",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "anthropics/skills",
+      "path": "skills/official/algorithmic-art",
+      "reason": "superseded by LeastBit/Anthropics_skills_zh-CN (overrides)"
+    },
+    {
+      "source": "anthropics/skills",
+      "path": "skills/official/brand-guidelines",
+      "reason": "superseded by LeastBit/Anthropics_skills_zh-CN (overrides)"
+    },
+    {
+      "source": "anthropics/skills",
+      "path": "skills/official/canvas-design",
+      "reason": "superseded by LeastBit/Anthropics_skills_zh-CN (overrides)"
+    },
+    {
+      "source": "anthropics/skills",
+      "path": "skills/official/doc-coauthoring",
+      "reason": "superseded by LeastBit/Anthropics_skills_zh-CN (overrides)"
+    },
+    {
+      "source": "anthropics/skills",
+      "path": "skills/official/docx",
+      "reason": "superseded by LeastBit/Anthropics_skills_zh-CN (overrides)"
+    },
+    {
+      "source": "anthropics/skills",
+      "path": "skills/official/frontend-design",
+      "reason": "superseded by LeastBit/Anthropics_skills_zh-CN (overrides)"
+    },
+    {
+      "source": "anthropics/skills",
+      "path": "skills/official/internal-comms",
+      "reason": "superseded by LeastBit/Anthropics_skills_zh-CN (overrides)"
+    },
+    {
+      "source": "LeastBit/Anthropics_skills_zh-CN",
+      "path": "skills/internal-comms/examples/3p-updates.md",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "LeastBit/Anthropics_skills_zh-CN",
+      "path": "skills/internal-comms/examples/company-newsletter.md",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "LeastBit/Anthropics_skills_zh-CN",
+      "path": "skills/internal-comms/examples/faq-answers.md",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "LeastBit/Anthropics_skills_zh-CN",
+      "path": "skills/internal-comms/examples/general-comms.md",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "anthropics/skills",
+      "path": "skills/official/mcp-builder",
+      "reason": "superseded by LeastBit/Anthropics_skills_zh-CN (overrides)"
+    },
+    {
+      "source": "anthropics/skills",
+      "path": "skills/official/pdf",
+      "reason": "superseded by LeastBit/Anthropics_skills_zh-CN (overrides)"
+    },
+    {
+      "source": "anthropics/skills",
+      "path": "skills/official/pptx",
+      "reason": "superseded by LeastBit/Anthropics_skills_zh-CN (overrides)"
+    },
+    {
+      "source": "anthropics/skills",
+      "path": "skills/official/skill-creator",
+      "reason": "superseded by LeastBit/Anthropics_skills_zh-CN (overrides)"
+    },
+    {
+      "source": "anthropics/skills",
+      "path": "skills/official/slack-gif-creator",
+      "reason": "superseded by LeastBit/Anthropics_skills_zh-CN (overrides)"
+    },
+    {
+      "source": "anthropics/skills",
+      "path": "skills/official/theme-factory",
+      "reason": "superseded by LeastBit/Anthropics_skills_zh-CN (overrides)"
+    },
+    {
+      "source": "anthropics/skills",
+      "path": "skills/official/web-artifacts-builder",
+      "reason": "superseded by LeastBit/Anthropics_skills_zh-CN (overrides)"
+    },
+    {
+      "source": "LeastBit/Anthropics_skills_zh-CN",
+      "path": "skills/web-artifacts-builder/scripts/shadcn-components.tar.gz",
+      "reason": "binary extension"
+    },
+    {
+      "source": "anthropics/skills",
+      "path": "skills/official/webapp-testing",
+      "reason": "superseded by LeastBit/Anthropics_skills_zh-CN (overrides)"
+    },
+    {
+      "source": "LeastBit/Anthropics_skills_zh-CN",
+      "path": "skills/webapp-testing/examples/console_logging.py",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "LeastBit/Anthropics_skills_zh-CN",
+      "path": "skills/webapp-testing/examples/element_discovery.py",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "LeastBit/Anthropics_skills_zh-CN",
+      "path": "skills/webapp-testing/examples/static_html_automation.py",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "anthropics/skills",
+      "path": "skills/official/xlsx",
+      "reason": "superseded by LeastBit/Anthropics_skills_zh-CN (overrides)"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/01-agent-engineering/adaptive-quality-gate/evals/evals.json",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/01-agent-engineering/project-cleanup-audit/evals/evals.json",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/01-agent-engineering/project-cleanup-audit/evals/files/dirty-repo/processes.json",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/01-agent-engineering/project-cleanup-audit/evals/files/dirty-repo/status.txt",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/01-agent-engineering/project-cleanup-audit/evals/files/ignored-paths/.gitignore",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/01-agent-engineering/project-cleanup-audit/evals/files/ignored-paths/.runtime/state.db",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/01-agent-engineering/project-cleanup-audit/evals/files/ignored-paths/test_dataset/user.csv",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/01-agent-engineering/project-cleanup-audit/evals/files/ignored-paths/__pycache__/cache.txt",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/01-agent-engineering/skill-creator",
+      "reason": "duplicate name \"skill-creator\" already provided by LeastBit/Anthropics_skills_zh-CN"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/01-agent-engineering/skill-lifecycle-manager/evals/evals.json",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/01-agent-engineering/skill-lifecycle-manager/evals/files/sync-hub/projects/example/private-skill/SKILL.md",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/01-agent-engineering/skill-lifecycle-manager/evals/files/sync-hub/skills/01-agent-engineering/sample-skill/SKILL.md",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/01-agent-engineering/skill-lifecycle-manager/evals/files/sync-local/sample-skill/SKILL.md",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/03-frameworks/frontend-design",
+      "reason": "duplicate name \"frontend-design\" already provided by LeastBit/Anthropics_skills_zh-CN"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/03-frameworks/netlify-cli/docs/full-guide.pdf",
+      "reason": "asset > 512KiB"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/03-frameworks/netlify-cli/examples/.gitkeep",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/docx",
+      "reason": "duplicate name \"docx\" already provided by LeastBit/Anthropics_skills_zh-CN"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/github-readme-visuals/evals/evals.json",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/github-readme-visuals/evals/files/readme-fixture/app/index.html",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/github-readme-visuals/evals/files/readme-fixture/docs/images/hero-en.png",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/github-readme-visuals/evals/files/readme-fixture/docs/images/hero-zh.png",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/github-readme-visuals/evals/files/readme-fixture/README.md",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/github-readme-visuals/evals/files/readme-fixture/README_zh.md",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/html-design-polish/assets/clovernas-navigation-reference.png",
+      "reason": "asset > 512KiB"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/html-design-polish/assets/innovation-navigation-reference.png",
+      "reason": "asset > 512KiB"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/html-design-polish/assets/xacduro-navigation-reference.png",
+      "reason": "asset > 512KiB"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/html-design-polish/examples/.gitkeep",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/jianying-editor/assets/cover.png",
+      "reason": "asset > 512KiB"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/jianying-editor/assets/video.mp4",
+      "reason": "asset > 512KiB"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/jianying-editor/examples/all_elements_regen.py",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/jianying-editor/examples/auto_exposure_align_demo.py",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/jianying-editor/examples/cloud_video_music_tts_demo.py",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/jianying-editor/examples/compound_clip_demo.py",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/jianying-editor/examples/my_first_vlog.py",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/jianying-editor/examples/robust_auto_export.py",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/jianying-editor/examples/simple_clip_demo.py",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/jianying-editor/examples/video_transcribe_and_match.py",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/jianying-editor/examples/web_to_video_intro_demo.py",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/jianying-editor/examples/_bootstrap.py",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/jianying-editor/scripts/vendor/pyJianYingDraft/metadata/video_scene_effect.py",
+      "reason": "asset > 512KiB"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/jianying-editor/tests/test_wrapper.py",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/pdf",
+      "reason": "duplicate name \"pdf\" already provided by LeastBit/Anthropics_skills_zh-CN"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/ppt-nano/evals/evals.json",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/ppt-nano/styles/whiteboard/pages/content_new.jpg",
+      "reason": "asset > 512KiB"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/pptx",
+      "reason": "duplicate name \"pptx\" already provided by LeastBit/Anthropics_skills_zh-CN"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/wechat-article/evals/evals.json",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/xlsx",
+      "reason": "duplicate name \"xlsx\" already provided by LeastBit/Anthropics_skills_zh-CN"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/yq-editorial-presentation-html/evals/evals.json",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/07-media-content/yq-editorial-presentation-html/evals/files/eleven-section-source.html",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/08-writing-marketing/decision-tree-with-lp-embedding/evals/evals.json",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/08-writing-marketing/github-repo-seo-standard/evals/evals.json",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/08-writing-marketing/github-seo-evaluation-loop/evals/evals.json",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/08-writing-marketing/github-seo-evaluation-loop/evals/files/lab/06_METHOD/measurement-framework.md",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/08-writing-marketing/github-seo-evaluation-loop/evals/files/lab/07_METRICS/tracking-config.json",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/08-writing-marketing/yq-article-style-imitation/evals/evals.json",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/08-writing-marketing/yq-article-style-imitation/evals/files/platform-source-article.md",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/10-business-industry/xhs-pharma-social-listening/evals/evals.json",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/10-business-industry/xhs-pharma-social-listening/evals/files/counting/comments.jsonl",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/10-business-industry/xhs-pharma-social-listening/evals/files/counting/note_details.jsonl",
+      "reason": "nested test/fixture path"
+    },
+    {
+      "source": "lubiny0601-spec/Skill-hub",
+      "path": "skills/10-business-industry/xhs-pharma-social-listening/evals/files/counting/search_results.jsonl",
+      "reason": "nested test/fixture path"
+    }
+  ]
+}

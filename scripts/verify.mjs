@@ -47,6 +47,10 @@ function parseDoc(text) {
 
 const errors = [];
 const warnings = [];
+// Expected and harmless: directories are prefixed with their category
+// (skills/official-zh/docx) while the panel keys skills by the frontmatter name
+// ("docx"). Counted, not listed, so real problems stay visible.
+let dirMismatch = 0;
 
 const skillsRoot = join(root, "skills");
 let allFiles;
@@ -107,7 +111,8 @@ for (const f of skillMdFiles) {
   if (RESERVED.test(name)) errors.push(`${label}: name "${name}" is a Windows reserved device name`);
   if (name.length > 100) errors.push(`${label}: name longer than 100 chars`);
   if (!description) errors.push(`${label}: empty description — panel marks invalid`);
-  if (dir !== name && name) warnings.push(`${label}: dir "${dir}" != frontmatter name "${name}" (panel uses frontmatter name)`);
+  if (dir !== name && name) dirMismatch++;
+  if (dir !== name && !name) errors.push(`${label}: empty frontmatter name and directory is not a valid skill name`);
 
   if (names.has(name)) errors.push(`duplicate skill name "${name}" in ${names.get(name)} and ${label}`);
   else names.set(name, label);
@@ -136,11 +141,22 @@ if (index) {
   }
 }
 
+// ── 4. the published tree must not contain stray SKILL.md outside skills/
+// The panel scans the ENTIRE repository, so a SKILL.md left in a scratch or
+// vendored directory would be picked up as an unexpected skill.
+for (const f of allFiles) {
+  const rel = relative(root, f).split(/[\\/]/).join("/");
+  if ((rel === "SKILL.md" || rel.endsWith("/SKILL.md")) && !rel.startsWith("skills/")) {
+    errors.push(`stray SKILL.md outside skills/: ${rel}`);
+  }
+}
+
 console.log(`payload      : ${(totalBytes / 1048576).toFixed(2)} MiB / ${(PANEL_MAX_ZIP / 1048576).toFixed(0)} MiB cap`);
 console.log(`skills       : ${skillMdFiles.length} / ${PANEL_MAX_SKILLS}`);
 console.log(`SKILL.md sum : ${(bodyTotal / 1048576).toFixed(2)} MiB / ${(PANEL_MAX_BODY_TOTAL / 1048576).toFixed(0)} MiB`);
 console.log(`files        : ${allFiles.length}`);
 console.log(`warnings     : ${warnings.length}`);
+console.log(`dir!=name    : ${dirMismatch} (expected: dirs are category-prefixed, panel uses frontmatter name)`);
 for (const w of warnings.slice(0, 20)) console.log(`  warn: ${w}`);
 if (warnings.length > 20) console.log(`  ... ${warnings.length - 20} more`);
 

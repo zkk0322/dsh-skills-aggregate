@@ -13,39 +13,26 @@ import { fileURLToPath } from "node:url";
 import { createHash } from "node:crypto";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
+import {
+  PANEL_MAX_SKILLS,
+  PANEL_MAX_SKILL_MD,
+  PER_FILE_MAX,
+  DROP_EXT,
+  SCAFFOLD_SEG,
+  skillValidity,
+  cleanOutputs,
+  createNameRegistry,
+  writeCatalogue,
+} from "./lib.mjs";
 
 const execFileAsync = promisify(execFile);
 const here = dirname(fileURLToPath(import.meta.url));
 
-const PANEL_MAX_SKILLS = 500;
-const PANEL_MAX_SKILL_MD = 256 * 1024;
-const SKILL_NAME_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
-const RESERVED = /^(con|prn|aux|nul|com[1-9]|lpt[1-9])$/i;
 const BUDGET = Number(process.env.AGG_BUDGET_BYTES || 26 * 1024 * 1024);
-const PER_FILE_MAX = 512 * 1024;
-const DROP_EXT = /\.(zip|tar|gz|tgz|7z|rar|mp4|mov|avi|mkv|webm|exe|dll|so|dylib|bin|onnx|pt|pth|safetensors|gguf|iso|dmg|msi|jar|wasm)$/i;
 
-function parseDoc(text) {
-  if (!text.startsWith("---")) return { hasFrontmatter: false, map: {} };
-  const end = text.indexOf("\n---", 3);
-  if (end < 0) return { hasFrontmatter: false, map: {} };
-  const map = {};
-  for (const raw of text.slice(3, end).split(/\r?\n/)) {
-    const m = /^([A-Za-z_][A-Za-z0-9_-]*)\s*:\s*(.*)$/.exec(raw);
-    if (!m) continue;
-    let v = m[2].trim();
-    if ((v.startsWith('"') && v.endsWith('"')) || (v.startsWith("'") && v.endsWith("'"))) v = v.slice(1, -1);
-    map[m[1]] = v;
-  }
-  return { hasFrontmatter: true, map };
-}
-
-function validity(text) {
-  const d = parseDoc(text);
-  const name = String(d.map.name || "");
-  const description = String(d.map.description || "");
-  return { ok: d.hasFrontmatter && SKILL_NAME_RE.test(name) && !RESERVED.test(name) && name.length <= 100 && description.length > 0, name, description };
-}
+// parseDoc / skillValidity live in lib.mjs so both builders judge frontmatter
+// identically; `validity` is kept as the local call-site name.
+const validity = skillValidity;
 
 const sha256 = (b) => createHash("sha256").update(b).digest("hex");
 
@@ -76,16 +63,16 @@ async function fetchZipTo(owner, name, refs, dest) {
 }
 
 /** Unzip using PowerShell (no external deps); returns extracted root dir. */
-async function unzip(zipPath, outDir) {
-  await rm(outDir, { recursive: true, force: true });
-  await mkdir(outDir, { recursive: true });
+async function unzip(zipPath, scratchDir) {
+  await rm(scratchDir, { recursive: true, force: true });
+  await mkdir(scratchDir, { recursive: true });
   await execFileAsync("powershell", [
     "-NoProfile", "-Command",
-    `Expand-Archive -LiteralPath '${zipPath}' -DestinationPath '${outDir}' -Force`,
+    `Expand-Archive -LiteralPath '${zipPath}' -DestinationPath '${scratchDir}' -Force`,
   ], { timeout: 600000 });
   const { stdout } = await execFileAsync("powershell", [
     "-NoProfile", "-Command",
-    `(Get-ChildItem -LiteralPath '${outDir}' -Directory | Select-Object -First 1).FullName`,
+    `(Get-ChildItem -LiteralPath '${scratchDir}' -Directory | Select-Object -First 1).FullName`,
   ]);
   return stdout.trim();
 }
@@ -105,14 +92,17 @@ async function walk(dir, base = dir) {
 }
 
 const manifest = JSON.parse(await readFile(join(here, "..", "manifest.json"), "utf8"));
-const outDir = process.env.AGG_OUT || join(here, "..", "dist-local");
+// Same output convention as build.mjs: default to the repository root so a local
+// run produces exactly what CI would publish. AGG_OUT overrides for scratch runs.
+const outDir = process.env.AGG_OUT || join(here, "..");
 const tmp = join(here, "..", ".tmp-zips");
 await mkdir(tmp, { recursive: true });
-await rm(outDir, { recursive: true, force: true });
-await mkdir(join(outDir, "skills"), { recursive: true });
+// outDir may be the repository root (the CI default), so only the generated outputs
+// are cleaned — a blanket rm -rf would delete .git and the sources.
+await cleanOutputs(rm, join, mkdir, outDir);
 
 const index = { generatedAt: new Date().toISOString(), budgetBytes: BUDGET, usedBytes: 0, skills: [], skipped: [] };
-const usedNames = new Map();
+const names = createNameRegistry();
 let used = 0;
 
 for (const src of manifest.sources) {
@@ -162,7 +152,7 @@ for (const src of manifest.sources) {
     // skill names it is allowed to replace). Without this, the first source would
     // permanently shadow every localized/updated variant of the same skill.
     const pr = Number(src.priority || 0);
-    const existing = usedNames.get(v.name);
+    const existing = names.get(v.name);
     if (existing && existing.source !== slug) {
       const mayOverride = (src.overrides || []).includes(v.name);
       if (mayOverride) {
@@ -174,6 +164,7 @@ for (const src of manifest.sources) {
           // the panel see two skills with the same frontmatter name and reject both.
           await rm(join(outDir, ...old.path.split("/")), { recursive: true, force: true });
           index.skills.splice(dropped, 1);
+          names.delete(v.name);
           index.skipped.push({ source: old.source, path: old.path, reason: `superseded by ${slug} (overrides)` });
         }
       } else {
@@ -190,7 +181,7 @@ for (const src of manifest.sources) {
       // Nested scaffolding inside a kept skill (e.g. skill-lifecycle-manager/evals/files/**)
       // carries its own SKILL.md files. The panel scans those too and would hit name
       // collisions, so anything under a test/fixture segment is never copied.
-      if (/(^|\/)(evals?|tests?|__tests__|fixtures?|examples?)(\/|$)/.test(rel)) {
+      if (SCAFFOLD_SEG.test(rel)) {
         index.skipped.push({ source: slug, path: posix.join(dir, rel), reason: "nested test/fixture path" });
         continue;
       }
@@ -211,7 +202,7 @@ for (const src of manifest.sources) {
     }
     used += cost;
     taken++;
-    usedNames.set(v.name, { source: slug, priority: pr });
+    names.set(v.name, slug, pr);
     index.skills.push({
       name: v.name, category: src.category || "misc", description: v.description,
       path: posix.join("skills", src.category || "misc", v.name),
@@ -225,6 +216,11 @@ for (const src of manifest.sources) {
 }
 
 index.usedBytes = used;
-await writeFile(join(outDir, "index.json"), JSON.stringify(index, null, 2));
+// Same catalogue writer as build.mjs, so a local run yields exactly the CI artifact.
+await writeCatalogue(writeFile, join, outDir, index, manifest);
+await writeFile(
+  join(outDir, ".build-summary.json"),
+  JSON.stringify({ skills: index.skills.length, bytes: index.usedBytes, skipped: index.skipped.length }, null, 2)
+);
 console.log(`\nDONE: ${index.skills.length} skills, ${(used / 1048576).toFixed(2)} MiB, skipped ${index.skipped.length}`);
 console.log(`out: ${outDir}`);
