@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-05T10:33:17.270Z",
+  "generatedAt": "2026-10-12T10:57:59.362Z",
   "budgetBytes": 27262976,
-  "usedBytes": 18476535,
+  "usedBytes": 18698196,
   "skills": [
     {
       "name": "academy-guide",
@@ -43,12 +43,12 @@
         },
         {
           "path": "SKILL.md",
-          "size": 101724,
-          "sha256": "9aac10d9ffb8778c5b7c0b9ec612b3915e83065feb92763c8231469e9fbc29c9"
+          "size": 105146,
+          "sha256": "40537cca17c4aa86e4ce83ced39efcbfb1204905e3cf4c4ff98f2eab011e4b7f"
         },
         {
           "path": "csharp/claude-api/README.md",
-          "size": 18915,
+          "size": 18933,
           "sha256": null
         },
         {
@@ -68,7 +68,7 @@
         },
         {
           "path": "csharp/claude-api/tool-use.md",
-          "size": 5998,
+          "size": 7623,
           "sha256": null
         },
         {
@@ -78,7 +78,7 @@
         },
         {
           "path": "curl/managed-agents.md",
-          "size": 8618,
+          "size": 10788,
           "sha256": null
         },
         {
@@ -98,12 +98,12 @@
         },
         {
           "path": "go/claude-api/tool-use.md",
-          "size": 8393,
+          "size": 10018,
           "sha256": null
         },
         {
           "path": "go/managed-agents/README.md",
-          "size": 18939,
+          "size": 22460,
           "sha256": null
         },
         {
@@ -123,12 +123,12 @@
         },
         {
           "path": "java/claude-api/tool-use.md",
-          "size": 9509,
+          "size": 11134,
           "sha256": null
         },
         {
           "path": "java/managed-agents/README.md",
-          "size": 16944,
+          "size": 20465,
           "sha256": null
         },
         {
@@ -153,22 +153,22 @@
         },
         {
           "path": "php/claude-api/tool-use.md",
-          "size": 8097,
+          "size": 9722,
           "sha256": null
         },
         {
           "path": "php/managed-agents/README.md",
-          "size": 13513,
+          "size": 16555,
           "sha256": null
         },
         {
           "path": "python/claude-api/README.md",
-          "size": 20491,
+          "size": 20623,
           "sha256": null
         },
         {
           "path": "python/claude-api/batches.md",
-          "size": 5588,
+          "size": 5723,
           "sha256": null
         },
         {
@@ -178,7 +178,7 @@
         },
         {
           "path": "python/claude-api/sdk-upgrade.md",
-          "size": 28741,
+          "size": 28760,
           "sha256": null
         },
         {
@@ -188,12 +188,12 @@
         },
         {
           "path": "python/claude-api/tool-use.md",
-          "size": 19786,
+          "size": 21411,
           "sha256": null
         },
         {
           "path": "python/managed-agents/README.md",
-          "size": 11518,
+          "size": 14823,
           "sha256": null
         },
         {
@@ -208,12 +208,12 @@
         },
         {
           "path": "ruby/claude-api/tool-use.md",
-          "size": 1063,
+          "size": 2688,
           "sha256": null
         },
         {
           "path": "ruby/managed-agents/README.md",
-          "size": 10452,
+          "size": 12201,
           "sha256": null
         },
         {
@@ -228,7 +228,7 @@
         },
         {
           "path": "shared/anthropic-cli.md",
-          "size": 22235,
+          "size": 23999,
           "sha256": null
         },
         {
@@ -238,42 +238,42 @@
         },
         {
           "path": "shared/cost-optimization.md",
-          "size": 57453,
+          "size": 58448,
           "sha256": null
         },
         {
           "path": "shared/error-codes.md",
-          "size": 19845,
+          "size": 20796,
           "sha256": null
         },
         {
           "path": "shared/live-sources.md",
-          "size": 22989,
+          "size": 17732,
           "sha256": null
         },
         {
           "path": "shared/managed-agents-api-reference.md",
-          "size": 34401,
+          "size": 35296,
           "sha256": null
         },
         {
           "path": "shared/managed-agents-client-patterns.md",
-          "size": 12043,
+          "size": 12095,
           "sha256": null
         },
         {
           "path": "shared/managed-agents-core.md",
-          "size": 32852,
+          "size": 33515,
           "sha256": null
         },
         {
           "path": "shared/managed-agents-environments.md",
-          "size": 12823,
+          "size": 14234,
           "sha256": null
         },
         {
           "path": "shared/managed-agents-events.md",
-          "size": 25029,
+          "size": 26015,
           "sha256": null
         },
         {
@@ -283,37 +283,112 @@
         },
         {
           "path": "shared/managed-agents-multiagent.md",
-          "size": 26250,
+          "size": 66616,
+          "sha256": null
+        },
+        {
+          "path": "shared/managed-agents-onboarding-from-quickstart.md",
+          "size": 19798,
+          "sha256": null
+        },
+        {
+          "path": "shared/managed-agents-onboarding-from-url.md",
+          "size": 32707,
           "sha256": null
         },
         {
           "path": "shared/managed-agents-onboarding.md",
-          "size": 13154,
+          "size": 16787,
           "sha256": null
         },
         {
           "path": "shared/managed-agents-outcomes.md",
-          "size": 7918,
+          "size": 8960,
           "sha256": null
         },
         {
           "path": "shared/managed-agents-overview.md",
-          "size": 13341,
+          "size": 14571,
+          "sha256": null
+        },
+        {
+          "path": "shared/managed-agents-quickstarts/bug-hunter.md",
+          "size": 8096,
+          "sha256": null
+        },
+        {
+          "path": "shared/managed-agents-quickstarts/contract-tracker.md",
+          "size": 1806,
+          "sha256": null
+        },
+        {
+          "path": "shared/managed-agents-quickstarts/data-analyst.md",
+          "size": 1561,
+          "sha256": null
+        },
+        {
+          "path": "shared/managed-agents-quickstarts/deep-researcher.md",
+          "size": 2430,
+          "sha256": null
+        },
+        {
+          "path": "shared/managed-agents-quickstarts/explainer-video-maker.md",
+          "size": 4886,
+          "sha256": null
+        },
+        {
+          "path": "shared/managed-agents-quickstarts/field-monitor.md",
+          "size": 2105,
+          "sha256": null
+        },
+        {
+          "path": "shared/managed-agents-quickstarts/incident-commander.md",
+          "size": 1723,
+          "sha256": null
+        },
+        {
+          "path": "shared/managed-agents-quickstarts/performance-tuner.md",
+          "size": 11394,
+          "sha256": null
+        },
+        {
+          "path": "shared/managed-agents-quickstarts/sprint-retro-facilitator.md",
+          "size": 2091,
+          "sha256": null
+        },
+        {
+          "path": "shared/managed-agents-quickstarts/structured-extractor.md",
+          "size": 1541,
+          "sha256": null
+        },
+        {
+          "path": "shared/managed-agents-quickstarts/support-agent.md",
+          "size": 1481,
+          "sha256": null
+        },
+        {
+          "path": "shared/managed-agents-quickstarts/support-to-eng-escalator.md",
+          "size": 1842,
+          "sha256": null
+        },
+        {
+          "path": "shared/managed-agents-quickstarts/watchlist-scanner.md",
+          "size": 5642,
           "sha256": null
         },
         {
           "path": "shared/managed-agents-scheduled-deployments.md",
-          "size": 9068,
+          "size": 9561,
           "sha256": null
         },
         {
           "path": "shared/managed-agents-self-hosted-sandboxes.md",
-          "size": 27847,
+          "size": 27926,
           "sha256": null
         },
         {
           "path": "shared/managed-agents-tools.md",
-          "size": 35673,
+          "size": 37869,
           "sha256": null
         },
         {
@@ -323,12 +398,12 @@
         },
         {
           "path": "shared/model-migration.md",
-          "size": 316954,
+          "size": 346255,
           "sha256": null
         },
         {
           "path": "shared/models.md",
-          "size": 15969,
+          "size": 17502,
           "sha256": null
         },
         {
@@ -338,17 +413,17 @@
         },
         {
           "path": "shared/preserved-thinking-migration.md",
-          "size": 63994,
+          "size": 64049,
           "sha256": null
         },
         {
           "path": "shared/preserved-thinking-migration/causes.md",
-          "size": 37879,
+          "size": 39705,
           "sha256": null
         },
         {
           "path": "shared/preserved-thinking-migration/drop_block_probe.py",
-          "size": 64338,
+          "size": 66582,
           "sha256": null
         },
         {
@@ -358,12 +433,12 @@
         },
         {
           "path": "shared/prompt-audit.md",
-          "size": 48983,
+          "size": 49344,
           "sha256": null
         },
         {
           "path": "shared/prompt-caching.md",
-          "size": 33021,
+          "size": 33116,
           "sha256": null
         },
         {
@@ -373,12 +448,12 @@
         },
         {
           "path": "shared/tool-use-concepts.md",
-          "size": 44242,
+          "size": 44359,
           "sha256": null
         },
         {
           "path": "typescript/claude-api/README.md",
-          "size": 15739,
+          "size": 15833,
           "sha256": null
         },
         {
@@ -398,16 +473,16 @@
         },
         {
           "path": "typescript/claude-api/tool-use.md",
-          "size": 22670,
+          "size": 24295,
           "sha256": null
         },
         {
           "path": "typescript/managed-agents/README.md",
-          "size": 10989,
+          "size": 14013,
           "sha256": null
         }
       ],
-      "bytes": 1598024
+      "bytes": 1819685
     },
     {
       "name": "discernment-nudge",
